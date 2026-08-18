@@ -504,7 +504,136 @@ body.fade-out {
 /* ==========================================================================
    ======================= ENHANCED PLACEMENTS SYSTEM ======================
    ========================================================================== */
-.placements-section {
+
+.sem-trigger-left { display: flex; align-items: center; gap: 20px; text-align: left; }
+.sem-trigger-left i { font-size: 1.6rem; }
+.color-y2 { color: #10b981; }
+.sem-trigger-left h3 { font-size: 1.25rem; font-weight: 600; margin: 0; color: #1a202c; }
+.sem-trigger-left span { font-size: 0.88rem; color: #718096; }
+.arrow-toggle { font-size: 1rem; color: #a0aec0; transition: transform 0.3s ease; }
+.sem-expandable-panel { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1); background: #f8fafc; border-top: 0 solid #edf2f7; }
+.semester-accordion-card.active .sem-expandable-panel { border-top-width: 1px; }
+.semester-accordion-card.active .arrow-toggle { transform: rotate(180deg); color: #1d4ed8; }
+.subject-row-entry { padding: 20px 35px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #edf2f7; text-align: left; flex-wrap: wrap; gap: 15px; }
+.subject-row-entry:last-child { border-bottom: none; }
+.subject-row-entry h4 { font-size: 1.05rem; font-weight: 600; margin: 0; color: #2d3748; max-width: 40%; min-width: 250px; }
+.resource-badge-chips-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.chip-link { text-decoration: none; font-size: 0.82rem; font-weight: 600; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
+.chip-link i { font-size: 0.9rem; }
+.chip-link.notes { background: #fff7ed; color: #9a3412; }
+.chip-link.qbank { background: #fdf2f8; color: #9d174d; }
+.chip-link.manual { background: #f0fdf4; color: #166534; }
+.chip-link.prev-papers { background: #f0f9ff; color: #0369a1; }
+.chip-link:hover { transform: translateY(-2px); filter: brightness(0.95); box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
+
+/* ==========================================================================
+   =========================== CONTACT US VIEW =============================
+   ========================================================================== */
+.contact-section { display: block !important; width: 100%; max-width: 1000px; margin: 0 auto; padding: 40px 20px; box-sizing: border-box; }
+.contact-title { text-align: center; width: 100%; margin-bottom: 35px; }
+.contact-title h1 { font-size: 2.5rem; font-weight: 700; color: #000000; margin: 0; }
+.contact-grid-container { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 25px; align-items: stretch; width: 100%; max-width: 900px; margin: 0 auto; box-sizing: border-box; }
+.contact-card-panel { background: #ffffff !important; border: 1px solid rgba(226, 232, 240, 0.8); border-radius: 12px; padding: 25px 30px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; box-sizing: border-box; }
+.contact-row-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; text-align: left; }
+.contact-icon-box { font-size: 1.2rem; color: #1a202c; padding-top: 2px; width: 20px; text-align: center; }
+.contact-text-box h3 { font-size: 1.15rem; font-weight: 600; color: #000000; margin: 0 0 5px 0; }
+.contact-text-box p { font-size: 0.92rem; color: #2d3748; line-height: 1.5; margin: 0; }
+.contact-text-box p a { color: #0b46ed; text-decoration: none; }
+.contact-text-box p a:hover { text-underline-offset: 3px; text-decoration: underline; }
+.contact-action-btn { display: block; width: 100%; background-color: #121212; color: #ffffff; text-align: center; padding: 12px 0; border-radius: 8px; font-size: 0.95rem; font-weight: 500; text-decoration: none; margin-top: auto; transition: background-color 0.2s ease; }
+.contact-action-btn:hover { background-color: #2d3748; }
+
+/* ==========================================================================
+   =========================== SYSTEM FOOTER ===============================
+   ========================================================================== */
+.footer { background: #e9e9e9; padding: 35px 30px 15px; }
+.footer-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+.footer-box { display: flex; flex-direction: column; gap: 8px; }
+.footer-box h3 { font-size: 15px; margin-bottom: 4px; font-weight: 600; color: #0f172a; }
+.footer-box a { text-decoration: none; color: #475569; font-size: 13px; transition: color 0.2s ease; }
+.footer-box a:hover { color: #2155d6; }
+.copyright { text-align: center; margin-top: 30px; font-size: 12px; color: #64748b; border-top: 1px solid #cbd5e1; padding-top: 15px; }
+.scroll-top { position: fixed; right: 25px; bottom: 25px; width: 50px; height: 50px; border: none; border-radius: 50%; background: black; color: white; font-size: 20px; cursor: pointer; display: none; z-index: 999; }
+
+/* ==========================================================================
+   ======================= AUTOMATED RESPONSIVE BREAKPOINTS =================
+   ========================================================================== */
+@media(max-width: 1200px) {
+  .faculty-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 992px) {
+  .infra-photo-grid, .infra-specs-grid, .placement-stats-grid, .recruiters-logo-grid { 
+    grid-template-columns: 1fr !important; 
+    max-width: 480px; 
+    margin: 0 auto; 
+  }
+  .contact-grid-container { grid-template-columns: 1fr !important; max-width: 480px; gap: 20px; }
+  .calendar-title h1, .infra-title h1, .gallery-title h1, .placements-title h1, .contact-title h1 { font-size: 2.2rem; }
+  .gallery-slider { height: 420px; }
+  .gallery-slider.medium-slider { height: 300px !important; }
+  .desktop-br { display: none; }
+  .subject-row-entry { flex-direction: column; align-items: flex-start; }
+  .subject-row-entry h4 { max-width: 100%; }
+}
+
+@media(max-width: 900px) {
+  .navbar { padding: 15px 20px; position: relative; }
+  .menu-btn { display: block; z-index: 1001; }
+  
+  /* FLATTENS THE DESKTOP NAV LINK ROW INTO A MOBILE MENU ACCORDION SLIDE CONTAINER */
+  .nav-links { 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #ffffff; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0px; 
+    padding: 0px; 
+    display: none; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
+    border-top: 1px solid #edf2f7;
+    z-index: 1000;
+  }
+  .nav-links.active { display: flex; }
+  .nav-links > li { width: 100%; }
+  .nav-links > li > a { 
+    display: block; 
+    padding: 15px 25px; 
+    width: 100%; 
+    border-bottom: 1px solid #f1f5f9;
+  }
+  
+  /* DROPDOWNS OPEN VIA CLICK ON MOBILE INSTEAD OF HOVER SCENARIOS */
+  .dropdown-menu { 
+    position: static; 
+    width: 100%; 
+    box-shadow: none; 
+    opacity: 1; 
+    visibility: visible; 
+    transform: none; 
+    display: none; 
+    margin-top: 0; 
+    border: none; 
+    background: #f8fafc;
+    border-radius: 0;
+  }
+  .dropdown.active .dropdown-menu { display: block; }
+  .dropdown-menu li a { padding: 12px 40px; border-bottom: 1px solid #edf2f7; }
+  .dropdown:hover > a i { transform: none; }
+  .dropdown .fa-chevron-down { transition: transform 0.3s ease; }
+  .dropdown.active .fa-chevron-down { transform: rotate(180deg); color: #2155d6; }
+  .dropdown::after { display: none; }
+  
+  .faculty-grid { grid-template-columns: repeat(2, 1fr); }
+  .vm-grid, .po-grid { grid-template-columns: 1fr; gap: 20px; }
+  .hero { height: 50vh; }
+}
+
+@media(max-width: 600px) {
+  .faculty-grid { grid-template-columns: 1fr; }.placements-section {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
@@ -660,135 +789,6 @@ body.fade-out {
 .semester-accordion-card { background: #ffffff; border-radius: 12px; border: 1px solid rgba(226, 232, 240, 0.8); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); overflow: hidden; }
 .sem-card-trigger { padding: 22px 30px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; background: #ffffff; transition: background 0.2s ease; }
 .sem-card-trigger:hover { background: #f8fafc; }
-.sem-trigger-left { display: flex; align-items: center; gap: 20px; text-align: left; }
-.sem-trigger-left i { font-size: 1.6rem; }
-.color-y2 { color: #10b981; }
-.sem-trigger-left h3 { font-size: 1.25rem; font-weight: 600; margin: 0; color: #1a202c; }
-.sem-trigger-left span { font-size: 0.88rem; color: #718096; }
-.arrow-toggle { font-size: 1rem; color: #a0aec0; transition: transform 0.3s ease; }
-.sem-expandable-panel { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1); background: #f8fafc; border-top: 0 solid #edf2f7; }
-.semester-accordion-card.active .sem-expandable-panel { border-top-width: 1px; }
-.semester-accordion-card.active .arrow-toggle { transform: rotate(180deg); color: #1d4ed8; }
-.subject-row-entry { padding: 20px 35px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #edf2f7; text-align: left; flex-wrap: wrap; gap: 15px; }
-.subject-row-entry:last-child { border-bottom: none; }
-.subject-row-entry h4 { font-size: 1.05rem; font-weight: 600; margin: 0; color: #2d3748; max-width: 40%; min-width: 250px; }
-.resource-badge-chips-row { display: flex; gap: 10px; flex-wrap: wrap; }
-.chip-link { text-decoration: none; font-size: 0.82rem; font-weight: 600; padding: 8px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
-.chip-link i { font-size: 0.9rem; }
-.chip-link.notes { background: #fff7ed; color: #9a3412; }
-.chip-link.qbank { background: #fdf2f8; color: #9d174d; }
-.chip-link.manual { background: #f0fdf4; color: #166534; }
-.chip-link.prev-papers { background: #f0f9ff; color: #0369a1; }
-.chip-link:hover { transform: translateY(-2px); filter: brightness(0.95); box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
-
-/* ==========================================================================
-   =========================== CONTACT US VIEW =============================
-   ========================================================================== */
-.contact-section { display: block !important; width: 100%; max-width: 1000px; margin: 0 auto; padding: 40px 20px; box-sizing: border-box; }
-.contact-title { text-align: center; width: 100%; margin-bottom: 35px; }
-.contact-title h1 { font-size: 2.5rem; font-weight: 700; color: #000000; margin: 0; }
-.contact-grid-container { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 25px; align-items: stretch; width: 100%; max-width: 900px; margin: 0 auto; box-sizing: border-box; }
-.contact-card-panel { background: #ffffff !important; border: 1px solid rgba(226, 232, 240, 0.8); border-radius: 12px; padding: 25px 30px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; box-sizing: border-box; }
-.contact-row-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; text-align: left; }
-.contact-icon-box { font-size: 1.2rem; color: #1a202c; padding-top: 2px; width: 20px; text-align: center; }
-.contact-text-box h3 { font-size: 1.15rem; font-weight: 600; color: #000000; margin: 0 0 5px 0; }
-.contact-text-box p { font-size: 0.92rem; color: #2d3748; line-height: 1.5; margin: 0; }
-.contact-text-box p a { color: #0b46ed; text-decoration: none; }
-.contact-text-box p a:hover { text-underline-offset: 3px; text-decoration: underline; }
-.contact-action-btn { display: block; width: 100%; background-color: #121212; color: #ffffff; text-align: center; padding: 12px 0; border-radius: 8px; font-size: 0.95rem; font-weight: 500; text-decoration: none; margin-top: auto; transition: background-color 0.2s ease; }
-.contact-action-btn:hover { background-color: #2d3748; }
-
-/* ==========================================================================
-   =========================== SYSTEM FOOTER ===============================
-   ========================================================================== */
-.footer { background: #e9e9e9; padding: 35px 30px 15px; }
-.footer-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
-.footer-box { display: flex; flex-direction: column; gap: 8px; }
-.footer-box h3 { font-size: 15px; margin-bottom: 4px; font-weight: 600; color: #0f172a; }
-.footer-box a { text-decoration: none; color: #475569; font-size: 13px; transition: color 0.2s ease; }
-.footer-box a:hover { color: #2155d6; }
-.copyright { text-align: center; margin-top: 30px; font-size: 12px; color: #64748b; border-top: 1px solid #cbd5e1; padding-top: 15px; }
-.scroll-top { position: fixed; right: 25px; bottom: 25px; width: 50px; height: 50px; border: none; border-radius: 50%; background: black; color: white; font-size: 20px; cursor: pointer; display: none; z-index: 999; }
-
-/* ==========================================================================
-   ======================= AUTOMATED RESPONSIVE BREAKPOINTS =================
-   ========================================================================== */
-@media(max-width: 1200px) {
-  .faculty-grid { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 992px) {
-  .infra-photo-grid, .infra-specs-grid, .placement-stats-grid, .recruiters-logo-grid { 
-    grid-template-columns: 1fr !important; 
-    max-width: 480px; 
-    margin: 0 auto; 
-  }
-  .contact-grid-container { grid-template-columns: 1fr !important; max-width: 480px; gap: 20px; }
-  .calendar-title h1, .infra-title h1, .gallery-title h1, .placements-title h1, .contact-title h1 { font-size: 2.2rem; }
-  .gallery-slider { height: 420px; }
-  .gallery-slider.medium-slider { height: 300px !important; }
-  .desktop-br { display: none; }
-  .subject-row-entry { flex-direction: column; align-items: flex-start; }
-  .subject-row-entry h4 { max-width: 100%; }
-}
-
-@media(max-width: 900px) {
-  .navbar { padding: 15px 20px; position: relative; }
-  .menu-btn { display: block; z-index: 1001; }
-  
-  /* FLATTENS THE DESKTOP NAV LINK ROW INTO A MOBILE MENU ACCORDION SLIDE CONTAINER */
-  .nav-links { 
-    position: absolute; 
-    top: 100%; 
-    left: 0; 
-    width: 100%; 
-    background: #ffffff; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    gap: 0px; 
-    padding: 0px; 
-    display: none; 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
-    border-top: 1px solid #edf2f7;
-    z-index: 1000;
-  }
-  .nav-links.active { display: flex; }
-  .nav-links > li { width: 100%; }
-  .nav-links > li > a { 
-    display: block; 
-    padding: 15px 25px; 
-    width: 100%; 
-    border-bottom: 1px solid #f1f5f9;
-  }
-  
-  /* DROPDOWNS OPEN VIA CLICK ON MOBILE INSTEAD OF HOVER SCENARIOS */
-  .dropdown-menu { 
-    position: static; 
-    width: 100%; 
-    box-shadow: none; 
-    opacity: 1; 
-    visibility: visible; 
-    transform: none; 
-    display: none; 
-    margin-top: 0; 
-    border: none; 
-    background: #f8fafc;
-    border-radius: 0;
-  }
-  .dropdown.active .dropdown-menu { display: block; }
-  .dropdown-menu li a { padding: 12px 40px; border-bottom: 1px solid #edf2f7; }
-  .dropdown:hover > a i { transform: none; }
-  .dropdown .fa-chevron-down { transition: transform 0.3s ease; }
-  .dropdown.active .fa-chevron-down { transform: rotate(180deg); color: #2155d6; }
-  .dropdown::after { display: none; }
-  
-  .faculty-grid { grid-template-columns: repeat(2, 1fr); }
-  .vm-grid, .po-grid { grid-template-columns: 1fr; gap: 20px; }
-  .hero { height: 50vh; }
-}
-
-@media(max-width: 600px) {
-  .faculty-grid { grid-template-columns: 1fr; }
   .faculty-hero h1, .objectives-hero h1 { font-size: 32px; }
   .faculty-section { padding: 30px 16px; }
   .message-section { padding: 30px 20px; }
