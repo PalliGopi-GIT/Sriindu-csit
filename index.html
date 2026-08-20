@@ -1,1148 +1,1636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Department of CSIT</title>
-  
+  <title>Department of CSIT | Sri Indu College of Engineering & Technology</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Department of Computer Science and Information Technology (CSIT) at Sri Indu College of Engineering and Technology (Autonomous). NBA & NAAC 'A+' accredited. Explore curriculum, faculty, placement records, and academic resources.">
+  <meta name="keywords"
+    content="CSIT, Sri Indu College, Computer Science, Information Technology, Engineering, Placements, B.Tech, JNTUH, Autonomous, Hyderabad">
+  <meta name="author" content="Department of CSIT, SICET">
+  <meta property="og:title" content="Department of CSIT | Sri Indu College of Engineering & Technology">
+  <meta property="og:description"
+    content="Pioneering Excellence in Computer Science & Information Technology Education, Innovation, and Placements.">
+  <meta property="og:type" content="website">
+  <!-- NOTE: this canonical/og:url is a best-guess placeholder following the sibling
+       CSE department's live pattern (sriindu.ac.in/cse/) — confirm/replace with the
+       real deployed path once this site goes live. -->
+  <link rel="canonical" href="https://sriindu.ac.in/csit/">
+  <meta property="og:url" content="https://sriindu.ac.in/csit/">
+  <meta property="og:image" content="https://sriindu.ac.in/csit/Assets/Campus/Main%20Block.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Department of Computer Science and Information Technology (CSIT), Sri Indu College of Engineering & Technology",
+    "alternateName": "CSIT SICET",
+    "url": "https://sriindu.ac.in/csit/",
+    "logo": "https://sriindu.ac.in/csit/Assets/Campus/Srindulogo.png",
+    "image": "https://sriindu.ac.in/csit/Assets/Campus/Main%20Block.png",
+    "email": "csitdeptsriindu@gmail.com",
+    "telephone": "+91-9347363999",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Main Road, Sheriguda (V), Ibrahimpatnam (M)",
+      "addressLocality": "R.R. Dist.",
+      "addressRegion": "Telangana",
+      "postalCode": "501510",
+      "addressCountry": "IN"
+    },
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "Sri Indu College of Engineering & Technology",
+      "url": "https://sriindu.ac.in/"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="Assets/Campus/Srindulogo.png">
-  <link rel="stylesheet" href="style.css">
-  
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <nav class="navbar">
-    <div class="nav-left">
-      <img src="Assets/Campus/Sri indu logo.png" class="logo" alt="Sri Indu Logo">
-      <h1>Department of CSIT</h1>
-    </div>  
-    
-    <div class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars"></i></div>  
-    
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#" onclick="openPage('home-page')">Home</a></li>
-      
-      <li class="dropdown">
-        <a href="#">Academics <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#" onclick="openPage('objectives-page')">Objectives</a></li>
-          <li><a href="#" onclick="openPage('calendar-page')">Academic Calendar</a></li>
-        </ul>
-      </li>
-      
-      <li class="dropdown">
-        <a href="#">Infrastructure <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#" onclick="openPage('laboratories-page')">Laboratories</a></li>
-          <li><a href="#" onclick="openPage('classrooms-page')">Classrooms</a></li>
-          <li><a href="#" onclick="openPage('library-page')">Library</a></li>
-          <li><a href="#" onclick="openPage('seminar-page')">Seminar Hall</a></li>
-        </ul>
-      </li>
-      
-      <li class="dropdown">
-        <a href="#">Faculty <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#" onclick="openPage('teaching-page')">Teaching</a></li>
-          <li><a href="#" onclick="openPage('non-teaching-page')">Non-Teaching</a></li>
-        </ul>
-      </li>
-      
-      <li class="dropdown">
-        <a href="#">Student Corner <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#" onclick="openPage('gallery-page')">Gallery</a></li>
-          <li><a href="#" onclick="openPage('placements-page')">Placements</a></li>
-          <li><a href="#" onclick="openPage('notes-page')">Notes</a></li>
-        </ul>
-      </li>
-      
-      <li><a href="#" onclick="openPage('placement-guide-page')">Placement Guide</a></li>
-      <li><a href="#" onclick="openPage('contact-page')">Contact</a></li> 
-    </ul>
-  </nav>
+  <!-- Fallback notice for visitors without JavaScript. Note: this is an
+       honest partial fallback — it explains the situation and gives a
+       phone/email path, but it cannot render the other sections, since
+       those still require JS to become visible. Real no-JS support would
+       need separate static pages per section. -->
+  <noscript>
+    <div class="noscript-banner">
+      This site needs JavaScript enabled to show most sections (Faculty, Labs, Notes, Placements, etc.).
+      You're currently seeing the homepage only. For help, call +91&nbsp;93473&nbsp;63999 or email
+      csitdeptsriindu@gmail.com.
+    </div>
+  </noscript>
 
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="nav-brand" onclick="openPage('home-page')">
+        <img src="Assets/Campus/Sri indu logo.png" class="logo" alt="Sri Indu College Emblem">
+        <div class="nav-brand-text">
+          <h1>Department of CSIT</h1>
+          <span class="subtext">Sri Indu College (Autonomous)</span>
+        </div>
+      </div>
+
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false"
+        aria-controls="nav-links">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#/" onclick="openPage('home-page')"><i class="fa-solid fa-house"></i> Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Academics <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/objectives" onclick="openPage('objectives-page')"><i class="fa-solid fa-bullseye"></i> Objectives</a>
+            </li>
+            <li><a href="#/academic-calendar" onclick="openPage('calendar-page')"><i class="fa-solid fa-calendar-days"></i> Academic
+                Calendar</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Infrastructure <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/laboratories" onclick="openPage('laboratories-page')"><i class="fa-solid fa-network-wired"></i>
+                Laboratories</a></li>
+            <li><a href="#/classrooms" onclick="openPage('classrooms-page')"><i class="fa-solid fa-chalkboard-user"></i>
+                Classrooms</a></li>
+            <li><a href="#/library" onclick="openPage('library-page')"><i class="fa-solid fa-book"></i> Central Library</a></li>
+            <li><a href="#/seminar-hall" onclick="openPage('seminar-page')"><i class="fa-solid fa-users-line"></i> Seminar Hall</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Faculty <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/faculty" onclick="openPage('teaching-page')"><i class="fa-solid fa-user-tie"></i> Teaching
+                Faculty</a></li>
+            <li><a href="#/technical-staff" onclick="openPage('non-teaching-page')"><i class="fa-solid fa-users-gear"></i> Technical
+                Staff</a></li>
+            <!-- NOTE: this item points at 'faculty-publications-page', which has no
+                 matching section in this document yet (pre-existing gap, not introduced
+                 by routing). The route is registered in PAGE_ROUTES so this is a real,
+                 shareable hash URL rather than a dead "#" — renderPage() falls back to
+                 Home gracefully until the page markup is built. -->
+            <li><a href="#/faculty-publications" onclick="openPage('faculty-publications-page')"><i class="fa-solid fa-book-open"></i>
+                Research & Publications</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Student Corner <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/gallery" onclick="openPage('gallery-page')"><i class="fa-solid fa-images"></i> Campus Gallery</a>
+            </li>
+            <li><a href="#/placements" onclick="openPage('placements-page')"><i class="fa-solid fa-briefcase"></i> Placement
+                Records</a></li>
+            <li><a href="#/notes" onclick="openPage('notes-page')"><i class="fa-solid fa-folder-open"></i> Notes &
+                Resources</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#/placement-guide" onclick="openPage('placement-guide-page')"><i class="fa-solid fa-graduation-cap"></i> Placement
+            Guide</a></li>
+        <li><a href="#/contact" onclick="openPage('contact-page')"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ==========================================================================
+       PAGE VIEW 1: HOME PAGE
+       ========================================================================== -->
   <div id="home-page" class="page-view active-page">
-    <section class="news-bar">
-      <button class="news-btn">Department News</button>
-      <div class="marquee-wrapper">
-        <div class="marquee">Welcome to the Department of Computer Science and Information Technology (CSIT), Sri Indu College of Engineering and Technology | Admissions Open for Academic Year 2026-27 | Congratulations to Our Students for Outstanding Academic Achievements | Department Faculty Published Research Papers in International Journals | Campus Placement Training Sessions Started for Final Year Students | Workshop on Artificial Intelligence and Data Science Conducted Successfully |</div>
+    <!-- News & Updates Bar: rotating single-line messages, dismissible.
+         See script.js section "NEWS BANNER" for the rotation/dismiss logic. -->
+    <section class="news-bar" id="newsBar" aria-label="Department News">
+      <div class="news-badge">
+        <i class="fa-solid fa-bolt"></i> Latest News
+      </div>
+      <div class="news-rotator" id="newsRotator" role="status" aria-live="polite">
+        <span class="news-item active">Admissions Open for Academic Year 2026-27</span>
+        <span class="news-item">Congratulations to Final Year CSIT Students for 92% Campus Placement Success</span>
+        <span class="news-item">Department Faculty Published 14+ Research Papers in IEEE & Springer International Journals</span>
+        <span class="news-item">Technical Workshop on Generative AI & Cloud Architecture Scheduled Next Month</span>
+        <span class="news-item">Campus Placement Drive with Top Tier MNCs Underway</span>
+        <span class="news-item">EAPCET Code: INDU</span>
+      </div>
+      <button class="news-dismiss-btn" id="newsDismiss" aria-label="Dismiss announcement bar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </section>
+
+    <!-- Ultra-Modern Hero Section -->
+    <section class="hero-wrapper">
+      <div class="hero-slider-bg">
+        <img src="Assets/Campus/Main Block.png" class="hero-slide active" alt="Sri Indu Main Block Campus"
+          loading="eager">
+        <img src="Assets/Campus/Campus2.JPG" class="hero-slide" alt="Campus Quadrangle Exterior" loading="lazy">
+        <img src="Assets/Campus/Campus3.JPG" class="hero-slide" alt="Academic Building Facilities" loading="lazy">
+        <img src="Assets/Campus/Campus4.JPG" class="hero-slide" alt="Department Campus Pathway" loading="lazy">
+        <img src="Assets/Campus/Campus5.JPG" class="hero-slide" alt="Campus Architecture Elevation" loading="lazy">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-award"></i> Autonomous | NBA & NAAC 'A+' Accredited | EAPCET: INDU
+          </div>
+          <h1 class="hero-headline">
+            Department of <br>
+            <span class="text-gradient">Computer Science & IT</span>
+          </h1>
+          <p class="hero-subheadline">
+            Pioneering excellence in software engineering, artificial intelligence, and cutting-edge computing. We
+            empower aspiring engineers with modern curricula, hands-on lab ecosystems, and stellar global career
+            pathways.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary-hero" onclick="openPage('objectives-page')">
+              <i class="fa-solid fa-compass"></i> Explore Academics
+            </button>
+            <button class="btn-secondary-hero" onclick="openPage('placement-guide-page')">
+              <i class="fa-solid fa-book-bookmark"></i> Placement Guide
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-controls">
+        <button class="hero-arrow-btn" id="heroPrev" aria-label="Previous Slide"><i
+            class="fa-solid fa-arrow-left"></i></button>
+        <button class="hero-arrow-btn" id="heroNext" aria-label="Next Slide"><i
+            class="fa-solid fa-arrow-right"></i></button>
       </div>
     </section>
-    
-    <section class="hero">
-      <div class="slider">
-        <img src="Assets/Campus/Main Block.png" class="slide active" alt="Main Block Layout">
-        <img src="Assets/Campus/Campus2.JPG" class="slide" alt="Campus Space Exterior">
-        <img src="Assets/Campus/Campus3.JPG" class="slide" alt="Campus Facilities Corridor">
-        <img src="Assets/Campus/Campus4.JPG" class="slide" alt="Widescreen Quadrangle Walkway">
-        <img src="Assets/Campus/Campus5.JPG" class="slide" alt="Department Environment Elevation">
-      </div>  
-      <button class="left-arrow" id="prev"><i class="fa-solid fa-arrow-left"></i></button>  
-      <button class="right-arrow" id="next"><i class="fa-solid fa-arrow-right"></i></button>  
-    </section>
-    
-    <section class="message-section">  
-      <div class="message-container">
-        <div class="message-image"><img src="Assets/Faculty/Chairman.jpg" alt="Chairman Profile"></div>
-        <div class="message-content">
-          <h3>Message from Chairman Sir</h3>
-          <p>Welcome to the Department of Computer Science and Information Technology (CSIT). We are committed to providing quality education, strong technical skills, and a platform for innovation and growth.</p>
-          <h3><span class="name">Sri.R.Venkat Rao, M.A, B.Ed.</span></h3>
+
+    <!-- Key Metrics & Statistics Strip -->
+    <div class="stats-banner">
+      <div class="stats-grid">
+        <div class="stat-card-modern">
+          <div class="stat-icon-circle stat-icon-blue"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="stat-info">
+            <div class="stat-number count-number" data-count="720" data-suffix="+">720+</div>
+            <div class="stat-label">Students Enrolled</div>
+          </div>
+        </div>
+        <div class="stat-card-modern">
+          <div class="stat-icon-circle stat-icon-green"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="stat-info">
+            <div class="stat-number count-number" data-count="92" data-suffix="%">92%</div>
+            <div class="stat-label">Placement Success</div>
+          </div>
+        </div>
+        <div class="stat-card-modern">
+          <div class="stat-icon-circle stat-icon-amber"><i class="fa-solid fa-trophy"></i></div>
+          <div class="stat-info">
+            <div class="stat-number count-number" data-count="20" data-suffix=" LPA">20 LPA</div>
+            <div class="stat-label">Highest Package</div>
+          </div>
+        </div>
+        <div class="stat-card-modern">
+          <div class="stat-icon-circle stat-icon-purple"><i class="fa-solid fa-handshake"></i></div>
+          <div class="stat-info">
+            <div class="stat-number count-number" data-count="12" data-suffix="+">12+</div>
+            <div class="stat-label">Industry MoUs & Labs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Specializations / Department Pillars -->
+    <section class="section-wrapper">
+      <div class="section-header-center">
+        <span class="section-tag">Core Competencies</span>
+        <h2 class="section-title">Program Specializations & Learning Pillars</h2>
+        <p class="section-subtitle">Our dynamic curriculum is engineered to align with global industry demands,
+          preparing students to lead in next-generation computing fields.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Artificial Intelligence & ML</h3>
+          <p>Deep dive into neural networks, machine learning pipelines, natural language processing, and computer
+            vision frameworks.</p>
+          <div class="pillar-topics">
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>LLMs</span>
+            <span>Data Science</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          <h3>Cloud Computing & DevOps</h3>
+          <p>Architect scalable, fault-tolerant cloud infrastructure, microservices, containerization, and automated
+            CI/CD deployment pipelines.</p>
+          <div class="pillar-topics">
+            <span>AWS / Azure</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>CI/CD</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Full-Stack Web Engineering</h3>
+          <p>Master end-to-end modern software development using industry-standard frontend and backend frameworks with
+            robust database design.</p>
+          <div class="pillar-topics">
+            <span>React / Node</span>
+            <span>TypeScript</span>
+            <span>PostgreSQL</span>
+            <span>GraphQL</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Cybersecurity & Networks</h3>
+          <p>Analyze network protocols, implement defense architectures, cryptosystems, penetration testing, and
+            enterprise data security.</p>
+          <div class="pillar-topics">
+            <span>Network Security</span>
+            <span>Cryptography</span>
+            <span>Ethical Hacking</span>
+            <span>SOC</span>
+          </div>
         </div>
       </div>
     </section>
-    
-    <section class="message-section">  
-      <div class="message-container">
-        <div class="message-image"><img src="Assets/Faculty/HOD SIR.jpeg" alt="HOD Profile View"></div>
-        <div class="message-content">
-          <h3>Message from Head Of The Department</h3>
-          <p>Welcome to the Department of Computer Science and Information Technology. We are committed to nurturing innovation and technical excellence.</p>
-          <h3><span class="name">Dr.T.Charan Singh</span></h3>
-        </div>
+
+    <!-- Leadership Messages -->
+    <section class="section-wrapper" style="background: var(--bg-subtle); border-radius: var(--radius-xl);">
+      <div class="section-header-center">
+        <span class="section-tag">Leadership Vision</span>
+        <h2 class="section-title">Messages from Our Mentors</h2>
+        <p class="section-subtitle">Guiding the department towards academic distinction, continuous innovation, and
+          ethical engineering excellence.</p>
       </div>
-    </section>
-    
-    <section class="stats-section">  
-      <h2>Department Strength</h2>  
-      <p>Dedicated team supporting education and research excellence.</p>
-      <div class="stats-container">
-        <a href="#" onclick="openPage('teaching-page')" class="stat-box"><h1>0</h1><h3>Professors</h3></a>
-        <a href="#" onclick="openPage('teaching-page')" class="stat-box"><h1>1</h1><h3>Associate Professors</h3></a>
-        <a href="#" onclick="openPage('teaching-page')" class="stat-box"><h1>0</h1><h3>Sr. Assistant Professors</h3></a>
-        <a href="#" onclick="openPage('teaching-page')" class="stat-box"><h1>8</h1><h3>Assistant Professors</h3></a>
-        <a href="#" onclick="openPage('non-teaching-page')" class="stat-box"><h1>1</h1><h3>Programmers & DTP</h3></a>
+
+      <div class="leadership-grid">
+        <!-- HOD Message -->
+        <div class="leadership-card">
+          <div class="leader-photo-wrapper">
+            <img src="Assets/Faculty/HOD SIR.jpeg" alt="Dr. T. Charan Singh - HOD CSIT" class="leader-photo"
+              loading="lazy">
+            <span class="leader-badge">Head of Department</span>
+          </div>
+          <div class="leader-content">
+            <i class="fa-solid fa-quote-left leader-quote-icon"></i>
+            <p class="leader-message">
+              "Our department strives to bridge theoretical computer science with transformative real-world software
+              engineering. We empower students with problem-solving acumen, industry readiness, and research curiosity
+              to excel globally."
+            </p>
+            <h4 class="leader-name">Dr. T. Charan Singh</h4>
+            <span class="leader-title">M.Tech., Ph.D. | Associate Professor & HOD, CSIT</span>
+          </div>
+        </div>
+
+        <!-- Chairman Message -->
+        <div class="leadership-card">
+          <div class="leader-photo-wrapper">
+            <img src="Assets/Faculty/Chairman.jpg" alt="Sri R. Venkat Rao - Chairman" class="leader-photo"
+              loading="lazy">
+            <span class="leader-badge">Chairman</span>
+          </div>
+          <div class="leader-content">
+            <i class="fa-solid fa-quote-left leader-quote-icon"></i>
+            <p class="leader-message">
+              "We are steadfast in providing world-class infrastructure, distinguished faculty mentorship, and holistic
+              career platforms that nurture ambitious engineers into societal leaders and innovators."
+            </p>
+            <h4 class="leader-name">Sri. R. Venkat Rao</h4>
+            <span class="leader-title">M.A., B.Ed. | Chairman, Sri Indu Group of Institutions</span>
+          </div>
+        </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 2: OBJECTIVES PAGE
+       ========================================================================== -->
   <div id="objectives-page" class="page-view">
+    <section class="objectives-hero">
+      <h1>Department Vision & Objectives</h1>
+      <p>Our commitment to excellence in teaching, research, and innovation in Computer Science and Information
+        Technology.</p>
+    </section>
+
     <section class="objectives-section">
-      <div class="objectives-hero">
-        <h1>Department Objectives</h1>
-        <p>Our department is committed to excellence in teaching, research, and innovation in Information Technology.</p>
-      </div>  
       <div class="vm-grid">
         <div class="objective-box">
-          <div class="objective-title"><i class="fa-solid fa-building-columns"></i><h2>Institution Vision</h2></div>
-          <div class="objective-content"><p>To be a premier Institution in Engineering & Technology and Management with competency, values and social consciousness.</p></div>
-        </div>
-        <div class="objective-box">
-          <div class="objective-title"><i class="fa-solid fa-compass"></i><h2>Institution Mission</h2></div>
+          <div class="objective-title">
+            <i class="fa-solid fa-building-columns"></i>
+            <h2>Institution Vision</h2>
+          </div>
           <div class="objective-content">
-            <p><strong>IM1:</strong> Provide high quality academic programs, training activities and research facilities.</p>
-            <p><strong>IM2:</strong> Promote Continuous Industry-Institute interaction for employability, entrepreneurship, leadership and research aptitude among stakeholders.</p>
-            <p><strong>IM3:</strong> Contribute to the economical and technological development of the region, state and nation.</p>
+            <p>To be a premier Institution in Engineering, Technology and Management with competency, values and social
+              consciousness.</p>
+          </div>
+        </div>
+
+        <div class="objective-box">
+          <div class="objective-title">
+            <i class="fa-solid fa-compass"></i>
+            <h2>Institution Mission</h2>
+          </div>
+          <div class="objective-content">
+            <p><strong>IM1:</strong> Provide high quality academic programs, training activities and research
+              facilities.</p>
+            <p><strong>IM2:</strong> Promote continuous Industry-Institute interaction for employability,
+              entrepreneurship, and research aptitude.</p>
+            <p><strong>IM3:</strong> Contribute to the economic and technological development of the region, state, and
+              nation.</p>
           </div>
         </div>
       </div>
+
       <div class="vm-grid">
         <div class="objective-box">
-          <div class="objective-title"><i class="fa-solid fa-eye"></i><h2>Department Vision</h2></div>
-          <div class="objective-content"><p>To become a prominent department empowering students to achieve their academic and professional career in the field of computer science & information technology.</p></div>
-        </div>
-        <div class="objective-box">
-          <div class="objective-title"><i class="fa-solid fa-bullseye"></i><h2>Department Mission</h2></div>
+          <div class="objective-title">
+            <i class="fa-solid fa-eye"></i>
+            <h2>Department Vision</h2>
+          </div>
           <div class="objective-content">
-            <p><strong>DM1:</strong> To impart professional education improving intellectual ability creation.</p>
-            <p><strong>DM2:</strong> To build engineers with the ability of teamwork, communication and interpersonal skill.</p>
-            <p><strong>DM3:</strong> To uplift innovation and research to get acquainted with industrial and societal commitment.</p>
+            <p>To become a prominent department empowering students to achieve distinction in academic and professional
+              careers in computer science and information technology.</p>
           </div>
         </div>
-      </div>  
+
+        <div class="objective-box">
+          <div class="objective-title">
+            <i class="fa-solid fa-bullseye"></i>
+            <h2>Department Mission</h2>
+          </div>
+          <div class="objective-content">
+            <p><strong>DM1:</strong> Impart professional education to advance intellectual ability and software
+              engineering competence.</p>
+            <p><strong>DM2:</strong> Build engineers with high collaborative ability, teamwork, leadership, and
+              communication skills.</p>
+            <p><strong>DM3:</strong> Uplift innovation, product development, and research to serve industrial and
+              societal commitments.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="po-grid">
         <div class="objective-box">
-          <div class="objective-title"><h2>Program Educational Objectives (PEOs)</h2></div>
-          <div class="objective-content scroll-box">
-            <p><strong>PEO1:</strong> Graduates will demonstrate technical competency and leadership to become professional engineers leading to a successful career.</p>
-            <p><strong>PEO2:</strong> Graduates will pursue lifelong learning in generating innovative engineering solutions using research and complex problem-solving skills.</p>
-            <p><strong>PEO3:</strong> Graduates will demonstrate commitment towards sustainable development for the betterment of society.</p>
+          <div class="objective-title">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Program Educational Objectives (PEOs)</h2>
+          </div>
+          <div class="objective-content">
+            <p><strong>PEO1 — Professional Mastery:</strong> Graduates demonstrate technical competency and leadership
+              to build impactful software solutions in top global organizations.</p>
+            <p><strong>PEO2 — Continuous Learning:</strong> Graduates pursue lifelong learning, advanced research, and
+              innovative problem-solving in emerging technologies.</p>
+            <p><strong>PEO3 — Ethical Leadership:</strong> Graduates exhibit high professional ethics and societal
+              responsibility towards sustainable engineering solutions.</p>
           </div>
         </div>
+
         <div class="objective-box">
-          <div class="objective-title"><h2>Program Specific Outcomes (PSOs)</h2></div>
-          <div class="objective-content scroll-box">
-            <p><strong>PSO1:</strong> To design, analyse and develop algorithms and implement using high-level programming languages for digital innovation and transformation.</p>
-            <p><strong>PSO2:</strong> Contribute their engineering skills in computing and information engineering domains like network design & administration, information security analysis, database administration and design.</p>
-            <p><strong>PSO3:</strong> Develop strong technical skill, research, innovations in computer Science and Information Technology for significant contribution for product development and to open source community meeting ever changing societal needs.</p>
+          <div class="objective-title">
+            <i class="fa-solid fa-award"></i>
+            <h2>Program Specific Outcomes (PSOs)</h2>
+          </div>
+          <div class="objective-content">
+            <p><strong>PSO1 — Algorithms & Software:</strong> Design, analyze, and implement robust algorithms and
+              software systems using modern programming paradigms.</p>
+            <p><strong>PSO2 — Systems & Security:</strong> Apply computing skills in network architecture, cloud
+              systems, information security, and enterprise database management.</p>
+            <p><strong>PSO3 — Product Innovation:</strong> Develop innovative applications and contribute to open-source
+              communities meeting real-world industry demands.</p>
           </div>
         </div>
-      </div>  
-      <div class="objective-box full-box">
-        <div class="objective-title"><h2>Program Outcomes (POs)</h2></div>
+      </div>
+
+      <div class="objective-box">
+        <div class="objective-title">
+          <i class="fa-solid fa-list-check"></i>
+          <h2>Program Outcomes (POs) Summary</h2>
+        </div>
         <div class="objective-content scroll-big">
-          <p><strong>PO1 - Engineering Knowledge:</strong> Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems.</p>
-          <p><strong>PO2 - Problem Analysis:</strong> Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4).</p>
-          <p><strong>PO3 - Design/Development of Solutions:</strong> Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5).</p>
-          <p><strong>PO4 - Conduct Investigations of Complex Problems:</strong> Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8).</p>
-          <p><strong>PO5 - Engineering Tool Usage:</strong> Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6).</p>
-          <p><strong>PO6 - The Engineer and The World:</strong> Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7).</p>
-          <p><strong>PO7 - Ethics:</strong> Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9).</p>
-          <p><strong>PO8 - Individual and Collaborative Team work:</strong> Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.</p>
-          <p><strong>PO9 - Communication:</strong> Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.</p>
-          <p><strong>PO10 - Project Management and Finance:</strong> Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments.</p>
-          <p><strong>PO11 - Life-Long Learning:</strong> Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change. (WK8).</p>
+          <p><strong>PO1 — Engineering Knowledge:</strong> Apply mathematics, natural science, computing, and
+            engineering fundamentals to solve complex problems.</p>
+          <p><strong>PO2 — Problem Analysis:</strong> Identify, formulate, review literature, and analyze engineering
+            challenges reaching substantiated conclusions.</p>
+          <p><strong>PO3 — Design of Solutions:</strong> Design creative solutions for complex engineering problems
+            considering public health, safety, and environment.</p>
+          <p><strong>PO4 — Conduct Investigations:</strong> Use research-based methods, experimental design, and data
+            interpretation to provide valid conclusions.</p>
+          <p><strong>PO5 — Modern Tool Usage:</strong> Create, select, and apply modern IT tools and engineering
+            software with an understanding of limitations.</p>
+          <p><strong>PO6 — The Engineer & Society:</strong> Apply reasoning to assess societal, health, safety, legal,
+            and cultural issues relevant to professional practice.</p>
+          <p><strong>PO7 — Environment & Sustainability:</strong> Understand the impact of engineering solutions in
+            societal and environmental contexts.</p>
+          <p><strong>PO8 — Ethics:</strong> Commit to professional ethics, responsibilities, and norms of engineering
+            practice.</p>
+          <p><strong>PO9 — Individual & Team Work:</strong> Function effectively as an individual, team member, or
+            leader in multidisciplinary settings.</p>
+          <p><strong>PO10 — Communication:</strong> Communicate effectively through reports, documentation, and
+            impactful presentations.</p>
+          <p><strong>PO11 — Project Management:</strong> Apply engineering and management principles to lead projects in
+            multidisciplinary environments.</p>
+          <p><strong>PO12 — Lifelong Learning:</strong> Recognize the need for and engage in independent, lifelong
+            learning in the broadest context of technological change.</p>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 3: ACADEMIC CALENDAR PAGE
+       ========================================================================== -->
   <div id="calendar-page" class="page-view">
     <section class="calendar-section">
       <div class="calendar-title">
         <h1>Academic Calendar 2026-27</h1>
-        <p>Explore the academic schedules for each year of the B.Tech program in Computer Science and Informational Technology.</p>
-      </div>  
-      <div class="calendar-grid"> 
-        <div onclick="window.open('https://sriindu.ac.in/wp-content/uploads/2026/08/ACADEMIC-YEAR-2026-27-ACADEMIC-CALENDAR-II-YEAR-BTECH-I-II-SEM.pdf', '_blank')" class="calendar-card" style="cursor: pointer;">
-          <div class="calendar-head"><i class="fa-solid fa-calendar-days"></i><h2>B.Tech II Year</h2></div>
-          <div class="calendar-content"><p>Click to view the academic calendar for B.Tech II Year.</p></div>
+        <p>Access official semester schedules, examination dates, and academic milestones for B.Tech CSIT.</p>
+      </div>
+
+      <div class="calendar-grid">
+        <div class="calendar-card">
+          <div>
+            <div class="calendar-head">
+              <i class="fa-solid fa-calendar-check"></i>
+              <h2>B.Tech II Year</h2>
+            </div>
+            <div class="calendar-content">
+              <p>Official schedule for B.Tech 2nd Year (Semester I & II) covering instruction periods, mid-term
+                examinations, and semester-end practicals.</p>
+            </div>
+          </div>
+          <a href="https://sriindu.ac.in/wp-content/uploads/2026/08/ACADEMIC-YEAR-2026-27-ACADEMIC-CALENDAR-II-YEAR-BTECH-I-II-SEM.pdf"
+            target="_blank" class="calendar-btn">
+            <i class="fa-solid fa-file-pdf"></i> View Calendar PDF
+          </a>
         </div>
-        <div onclick="window.open('https://drive.google.com/file/d/1zro6sqTUrrB3J6-9GX1kys0LIVyQUGuo/view?usp=sharing', '_blank')" class="calendar-card" style="cursor: pointer;">
-          <div class="calendar-head"><i class="fa-solid fa-calendar-days"></i><h2>B.Tech III Year</h2></div>
-          <div class="calendar-content"><p>Click to view the academic calendar for B.Tech III Year.</p></div>
+
+        <div class="calendar-card">
+          <div>
+            <div class="calendar-head">
+              <i class="fa-solid fa-calendar-check"></i>
+              <h2>B.Tech III Year</h2>
+            </div>
+            <div class="calendar-content">
+              <p>Detailed timetable, continuous evaluation dates, industrial visits, and mid examinations for B.Tech 3rd
+                Year (Semester I & II).</p>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1zro6sqTUrrB3J6-9GX1kys0LIVyQUGuo/view?usp=sharing" target="_blank"
+            class="calendar-btn">
+            <i class="fa-solid fa-file-pdf"></i> View Calendar PDF
+          </a>
         </div>
-        <div onclick="window.open('https://drive.google.com/file/d/1zro6sqTUrrB3J6-9GX1kys0LIVyQUGuo/view?usp=sharing', '_blank')" class="calendar-card" style="cursor: pointer;">
-          <div class="calendar-head"><i class="fa-solid fa-calendar-days"></i><h2>B.Tech IV Year</h2></div>
-          <div class="calendar-content"><p>Click to view the academic calendar for B.Tech IV Year.</p></div>
+
+        <div class="calendar-card">
+          <div>
+            <div class="calendar-head">
+              <i class="fa-solid fa-calendar-check"></i>
+              <h2>B.Tech IV Year</h2>
+            </div>
+            <div class="calendar-content">
+              <p>Final year roadmap including major project reviews, placement assessment windows, comprehensive viva
+                schedules, and final examinations.</p>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1zro6sqTUrrB3J6-9GX1kys0LIVyQUGuo/view?usp=sharing" target="_blank"
+            class="calendar-btn">
+            <i class="fa-solid fa-file-pdf"></i> View Calendar PDF
+          </a>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 4: LABORATORIES PAGE
+       ========================================================================== -->
   <div id="laboratories-page" class="page-view">
     <section class="infra-section">
       <div class="infra-title">
         <h1>Department Laboratories</h1>
-        <p>Explore our state-of-the-art laboratories, equipped with high-end systems and the latest software and hardware infrastructure.</p>
+        <p>Explore our 8 high-performance computing labs configured with advanced workstations, high-speed fiber
+          connectivity, and industry-grade software ecosystems.</p>
       </div>
+
       <div class="infra-photo-grid">
         <div class="infra-photo-card">
-          <div class="infra-img-wrapper"><img src="Assets/Laboratories/LAB-I.jpeg" alt="Lab I Preview"></div>
-          <div class="infra-card-label">LAB-I</div>
+          <div class="infra-img-wrapper"><img src="Assets/Laboratories/LAB-I.jpeg" alt="Computing Lab I" loading="lazy">
+          </div>
+          <div class="infra-card-label"><span>LAB-I: Advanced Computing Lab</span><i class="fa-solid fa-desktop"></i>
+          </div>
         </div>
         <div class="infra-photo-card">
-          <div class="infra-img-wrapper"><img src="Assets/Laboratories/Lab-II.JPG" alt="Lab II Preview"></div>
-          <div class="infra-card-label">LAB-II</div>
+          <div class="infra-img-wrapper"><img src="Assets/Laboratories/Lab-II.JPG" alt="Data Structures Lab II"
+              loading="lazy"></div>
+          <div class="infra-card-label"><span>LAB-II: AI & Data Science Lab</span><i class="fa-solid fa-brain"></i>
+          </div>
         </div>
         <div class="infra-photo-card">
-          <div class="infra-img-wrapper"><img src="Assets/Laboratories/LAB-III.jpeg" alt="Lab III Preview"></div>
-          <div class="infra-card-label">LAB-III</div>
+          <div class="infra-img-wrapper"><img src="Assets/Laboratories/LAB-III.jpeg" alt="Software Engineering Lab III"
+              loading="lazy"></div>
+          <div class="infra-card-label"><span>LAB-III: Web Development Lab</span><i class="fa-solid fa-code"></i></div>
+        </div>
+        <div class="infra-photo-card">
+          <div class="infra-img-wrapper"><img src="Assets/Laboratories/Lab-IV.JPG" alt="Cloud Lab IV" loading="lazy">
+          </div>
+          <div class="infra-card-label"><span>LAB-IV: Cloud & DevOps Lab</span><i class="fa-solid fa-cloud"></i></div>
+        </div>
+        <div class="infra-photo-card">
+          <div class="infra-img-wrapper"><img src="Assets/Laboratories/Lab-V.JPG" alt="Networks Lab V" loading="lazy">
+          </div>
+          <div class="infra-card-label"><span>LAB-V: Networks & Security Lab</span><i class="fa-solid fa-shield"></i>
+          </div>
+        </div>
+        <div class="infra-photo-card">
+          <div class="infra-img-wrapper"><img src="Assets/Laboratories/LAB-VI.JPG" alt="Database Lab VI" loading="lazy">
+          </div>
+          <div class="infra-card-label"><span>LAB-VI: Database Systems Lab</span><i class="fa-solid fa-database"></i>
+          </div>
         </div>
       </div>
-      <div class="infra-photo-grid">
-        <div class="infra-photo-card">
-          <div class="infra-img-wrapper"><img src="Assets/Laboratories/Lab-IV.JPG" alt="Lab IV Preview"></div>
-          <div class="infra-card-label">LAB-IV</div>
-        </div>
-        <div class="infra-photo-card">
-          <div class="infra-img-wrapper"><img src="Assets/Laboratories/Lab-V.JPG" alt="Lab V Preview"></div>
-          <div class="infra-card-label">LAB-V</div>
-        </div>
-        <div class="infra-photo-card">
-          <div class="infra-img-wrapper"><img src="Assets/Laboratories/LAB-VI.JPG" alt="Lab VI Preview"></div>
-          <div class="infra-card-label">LAB-VI</div>
-        </div>
-      </div>
-      
+
       <div class="infra-specs-grid">
         <div class="spec-card-box">
-          <div class="spec-header" style="color: #6366f1;"><i class="fa-solid fa-desktop"></i>  <h3>Labs</h3></div>
-          <ul class="spec-list-items arrow-blue"><li>8 B.Tech. Labs with high-end systems</li></ul>
-        </div>
-        <div class="spec-card-box">
-          <div class="spec-header" style="color: #10b981;"><i class="fa-solid fa-microchip"></i>  <h3>Equipment</h3></div>
-          <ul class="spec-list-items arrow-green">
-            <li>Acer, Lenovo dual core, i3 and i5 desktops with LED monitors</li>
-            <li>Access to all major cloud service providers (EC2, Azure)</li>
-            <li>LCD projectors | HP LaserJet printers</li>
+          <div class="spec-header" style="color: var(--primary);"><i class="fa-solid fa-desktop"></i>
+            <h3>Lab Scale</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>8 dedicated air-conditioned B.Tech computer laboratories</li>
+            <li>Over 300+ networked Intel Core i5/i7 workstations</li>
+            <li>Gigabit LAN backbone with dedicated 1 Gbps redundant fiber leased line</li>
           </ul>
         </div>
+
         <div class="spec-card-box">
-          <div class="spec-header-icons">
-            <i class="fa-brands fa-windows" style="color: #0078d4;"></i>
-            <i class="fa-solid fa-circle" style="color: #f80000; font-size: 1.1rem; margin: 0 4px;"></i>
-            <i class="fa-brands fa-linux" style="color: #000000;"></i>
+          <div class="spec-header" style="color: var(--accent-emerald);"><i class="fa-solid fa-microchip"></i>
+            <h3>Hardware & AV</h3>
           </div>
-          <div class="spec-header" style="color: #1a202c; margin-top: 5px;"><h3>Software</h3></div>
-          <ul class="spec-list-items arrow-red">
-            <li>All Microsoft software (Microsoft Imagine subscription)</li>
-            <li>All Oracle software (Oracle Academy membership)</li>
-            <li>Various flavors of Linux</li>
+          <ul class="spec-list-items">
+            <li>Acer & Lenovo professional desktop systems with 24" LED displays</li>
+            <li>High-lumen overhead interactive LCD projectors in every laboratory</li>
+            <li>Centralized online UPS backup providing 100% uninterrupted power</li>
+          </ul>
+        </div>
+
+        <div class="spec-card-box">
+          <div class="spec-header" style="color: var(--accent-purple);"><i class="fa-solid fa-cube"></i>
+            <h3>Software Stack</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>Microsoft Imagine Academic Subscription (Full OS & Developer Suites)</li>
+            <li>Oracle Academy Institutional Membership with MySQL Enterprise</li>
+            <li>Ubuntu Linux, Python 3, Docker, Java JDK 21, VS Code, and Git CLI</li>
           </ul>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 5: CLASSROOMS PAGE
+       ========================================================================== -->
   <div id="classrooms-page" class="page-view">
     <section class="infra-section">
       <div class="infra-title">
-        <h1>Classrooms & Learning Spaces</h1>
-        <p>Explore our thoughtfully designed classrooms and learning environments, optimized for modern education and collaboration.</p>
+        <h1>Classrooms & Smart Learning Spaces</h1>
+        <p>Acoustically designed, ergonomically furnished smart lecture halls equipped with modern interactive
+          projection technology.</p>
       </div>
-      
+
       <div class="gallery-carousel-container medium-carousel">
         <div class="gallery-slider medium-slider" id="classSlider">
-          <img src="Assets/Laboratories/Class Room1.JPG" class="class-slide active" alt="Intelligent Space">
-          <img src="Assets/Laboratories/Class Room2.JPG" class="class-slide" alt="Multimedia Setups">
-          <img src="Assets/Laboratories/Class Room3.jpg" class="class-slide" alt="Interactive Display Systems">
-          <img src="Assets/Laboratories/Class Room4.JPG" class="class-slide" alt="Acoustic Learning Spaces">
+          <img src="Assets/Laboratories/Class Room1.JPG" class="class-slide active" alt="Smart Lecture Hall 1"
+            loading="lazy">
+          <img src="Assets/Laboratories/Class Room2.JPG" class="class-slide" alt="Smart Lecture Hall 2" loading="lazy">
+          <img src="Assets/Laboratories/Class Room3.jpg" class="class-slide" alt="Interactive Display Classroom"
+            loading="lazy">
+          <img src="Assets/Laboratories/Class Room4.JPG" class="class-slide" alt="Seminar Classroom" loading="lazy">
         </div>
-        <button class="gallery-arrow-btn left-arrow" id="classPrev"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="gallery-arrow-btn right-arrow" id="classNext"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="gallery-arrow-btn left-arrow" id="classPrev" aria-label="Previous Classroom"><i
+            class="fa-solid fa-arrow-left"></i></button>
+        <button class="gallery-arrow-btn right-arrow" id="classNext" aria-label="Next Classroom"><i
+            class="fa-solid fa-arrow-right"></i></button>
       </div>
-      <br><br>
-      
-      <div class="classroom-stack-container">
-        <div class="classroom-detail-card">
-          <div class="classroom-card-header"><i class="fa-solid fa-lightbulb"></i>  <h2>Intelligent Learning Environments</h2></div>
-          <ul class="classroom-bullet-list">
-            <li>Architecturally designed spaces that transcend traditional educational boundaries, creating an ecosystem of intellectual growth and technological innovation.</li>
-            <li>Engineered to cultivate critical thinking, creativity, and professional excellence.</li>
+
+      <div class="infra-specs-grid">
+        <div class="spec-card-box">
+          <div class="spec-header" style="color: var(--primary);"><i class="fa-solid fa-chalkboard"></i>
+            <h3>Smart Projection</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>High-resolution digital interactive projectors in every lecture hall</li>
+            <li>Motorized projection screens with wide-angle visibility</li>
           </ul>
         </div>
-        <div class="classroom-detail-card">
-          <div class="classroom-card-header"><i class="fa-solid fa-users-rectangle"></i>  <h2>Professional Classroom</h2></div>
-          <ul class="classroom-bullet-list">
-            <li>Architectural Precision: Meticulously designed learning spaces that blend functionality with aesthetic sophistication.</li>
-            <li>Ergonomic Spatial Configuration | Optimized Acoustic Engineering | Natural Light Optimization | Adaptive Learning Environments</li>
+
+        <div class="spec-card-box">
+          <div class="spec-header" style="color: var(--accent-emerald);"><i class="fa-solid fa-wifi"></i>
+            <h3>Campus Connectivity</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>Campus-wide Wi-Fi 6 wireless access points for digital learning</li>
+            <li>Hybrid teaching capabilities with high-fidelity audio capture</li>
           </ul>
         </div>
-        <div class="classroom-detail-card">
-          <div class="classroom-card-header"><i class="fa-solid fa-laptop-code"></i>  <h2>Technological Integration</h2></div>
-          <ul class="classroom-bullet-list">
-            <li>Advanced technological infrastructure supporting contemporary educational methodologies.</li>
-            <li>State-of-the-art Projection Systems | High-Bandwidth Network Connectivity | Interactive Digital Interfaces | Collaborative Learning Platforms</li>
+
+        <div class="spec-card-box">
+          <div class="spec-header" style="color: var(--accent-amber);"><i class="fa-solid fa-chair"></i>
+            <h3>Ergonomics</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>Tiered seating configuration ensuring unobstructed sightlines</li>
+            <li>Natural light optimization and acoustic wall dampening</li>
           </ul>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 6: CENTRAL LIBRARY PAGE
+       ========================================================================== -->
   <div id="library-page" class="page-view">
     <section class="infra-section">
       <div class="infra-title">
-        <h1>Central Library</h1>
-        <p>A premier information hub spanning 2500 sq. meters across three floors, meticulously designed to support academic research and continuous study.</p>
+        <h1>Central Library & Knowledge Center</h1>
+        <p>A sprawling 2,500 sq. meter digital and physical knowledge repository spanning three floors with extensive
+          IEEE, Springer, and ACM digital library access.</p>
       </div>
-      
+
       <div class="gallery-carousel-container medium-carousel">
         <div class="gallery-slider medium-slider" id="libSlider">
-          <img src="Assets/Laboratories/Library1.JPG" class="lib-slide active">
-          <img src="Assets/Laboratories/Library2.JPG" class="lib-slide">
-          <img src="Assets/Laboratories/Library3.jpg" class="lib-slide">
-          <img src="Assets/Laboratories/Library4.JPG" class="lib-slide">
-          <img src="Assets/Laboratories/Library5.jpg" class="lib-slide">
-          <img src="Assets/Laboratories/Library6.JPG" class="lib-slide">
-          <img src="Assets/Laboratories/Library7.JPG" class="lib-slide">
-          <img src="Assets/Laboratories/Library8.jpg" class="lib-slide">
-          <img src="Assets/Laboratories/Library9.JPG" class="lib-slide">
+          <img src="Assets/Laboratories/Library1.JPG" class="lib-slide active" alt="Central Library Entrance"
+            loading="lazy">
+          <img src="Assets/Laboratories/Library2.JPG" class="lib-slide" alt="Library Reading Hall" loading="lazy">
+          <img src="Assets/Laboratories/Library3.jpg" class="lib-slide" alt="Digital Library Systems" loading="lazy">
+          <img src="Assets/Laboratories/Library4.JPG" class="lib-slide" alt="Book Stacks" loading="lazy">
+          <img src="Assets/Laboratories/Library5.jpg" class="lib-slide" alt="Periodicals Section" loading="lazy">
+          <img src="Assets/Laboratories/Library6.JPG" class="lib-slide" alt="Study Hall" loading="lazy">
+          <img src="Assets/Laboratories/Library7.JPG" class="lib-slide" alt="Research Archives" loading="lazy">
+          <img src="Assets/Laboratories/Library8.jpg" class="lib-slide" alt="Circulation Desk" loading="lazy">
+          <img src="Assets/Laboratories/Library9.JPG" class="lib-slide" alt="Digital Hub" loading="lazy">
         </div>
-        <button class="gallery-arrow-btn left-arrow" id="libPrev"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="gallery-arrow-btn right-arrow" id="libNext"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="gallery-arrow-btn left-arrow" id="libPrev" aria-label="Previous Library Slide"><i
+            class="fa-solid fa-arrow-left"></i></button>
+        <button class="gallery-arrow-btn right-arrow" id="libNext" aria-label="Next Library Slide"><i
+            class="fa-solid fa-arrow-right"></i></button>
       </div>
-      
-      <div class="infra-specs-grid" style="margin-top: 40px;">
+
+      <div class="infra-specs-grid">
         <div class="spec-card-box">
-          <div class="spec-header" style="color: #0b46ed;"><i class="fa-solid fa-book-open"></i>  <h3>Print Assets</h3></div>
-          <ul class="spec-list-items arrow-blue">
-            <li>Extensive catalog matching over 45,992+ Total Volumes</li>
-            <li>Distinct structured collection across 7,691 separate Titles</li>
-            <li>Dedicated SC/ST Book Bank borrowing section | Capacity to host 300 readers simultaneously</li>
+          <div class="spec-header" style="color: var(--primary);"><i class="fa-solid fa-book-open"></i>
+            <h3>Print Resources</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>50,000+ volumes covering CS, IT, AI, Mathematics, and Humanities</li>
+            <li>120+ National and International print journal subscriptions</li>
           </ul>
         </div>
+
         <div class="spec-card-box">
-          <div class="spec-header" style="color: #10b981;"><i class="fa-solid fa-globe"></i>  <h3>Digital Network</h3></div>
-          <ul class="spec-list-items arrow-green">
-            <li>Access channels to 2,968+ e-journals and 41,529+ e-books</li>
-            <li>Core subscriptions to IEEE, DELNET, J-Gate and UGC N-List</li>
-            <li>Media streams: NPTEL, MIT, and Swayam Prabha | 60-seat high-bandwidth Digital Library terminal block</li>
+          <div class="spec-header" style="color: var(--accent-emerald);"><i class="fa-solid fa-laptop"></i>
+            <h3>Digital Library</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>50 dedicated multimedia workstations for journal research</li>
+            <li>Subscribed access to IEEE Xplore, DELNET, NPTEL, and SpringerLink</li>
           </ul>
         </div>
+
         <div class="spec-card-box">
-          <div class="spec-header" style="color: #6366f1;"><i class="fa-solid fa-gears"></i>  <h3>Operations</h3></div>
-          <ul class="spec-list-items arrow-blue">
-            <li>Fully managed using NewGenLib Library Automation Software</li>
-            <li>Complete barcoded asset tracking for swift book issue and return</li>
-            <li>Public access terminals for OPAC search | Structured split seating layouts</li>
+          <div class="spec-header" style="color: var(--accent-purple);"><i class="fa-solid fa-clock"></i>
+            <h3>Services</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>Automated barcode book lending and OPAC catalog search</li>
+            <li>Quiet air-conditioned reading halls open extended hours during exams</li>
           </ul>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 7: SEMINAR HALL PAGE
+       ========================================================================== -->
   <div id="seminar-page" class="page-view">
     <section class="infra-section">
       <div class="infra-title">
-        <h1>Seminar Hall</h1>
-        <p>An advanced multimedia auditorium space optimized to facilitate technical conferences, professional student workshops, and campus corporate placement sessions.</p>
+        <h1>Auditorium & Seminar Halls</h1>
+        <p>State-of-the-art auditorium and departmental seminar halls hosting international conferences, guest lectures,
+          hackathons, and technical symposiums.</p>
       </div>
-      
+
       <div class="gallery-carousel-container medium-carousel">
         <div class="gallery-slider medium-slider" id="semSlider">
-          <img src="Assets/Laboratories/Seminar Hall2.JPG" class="sem-slide active">
-          <img src="Assets/Laboratories/Seminar Hall1.JPG" class="sem-slide">
-          <img src="Assets/Laboratories/Seminar Hall3.JPG" class="sem-slide">
-          <img src="Assets/Laboratories/Seminar Hall4.JPG" class="sem-slide">
+          <img src="Assets/Laboratories/Seminar Hall1.JPG" class="sem-slide active" alt="Seminar Hall Stage"
+            loading="lazy">
+          <img src="Assets/Laboratories/Seminar Hall2.JPG" class="sem-slide" alt="Auditorium Seating" loading="lazy">
+          <img src="Assets/Laboratories/Seminar Hall3.JPG" class="sem-slide" alt="Presentation Screen" loading="lazy">
+          <img src="Assets/Laboratories/Seminar Hall4.JPG" class="sem-slide" alt="Conference Facility" loading="lazy">
         </div>
-        <button class="gallery-arrow-btn left-arrow" id="semPrev"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="gallery-arrow-btn right-arrow" id="semNext"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="gallery-arrow-btn left-arrow" id="semPrev" aria-label="Previous Seminar Slide"><i
+            class="fa-solid fa-arrow-left"></i></button>
+        <button class="gallery-arrow-btn right-arrow" id="semNext" aria-label="Next Seminar Slide"><i
+            class="fa-solid fa-arrow-right"></i></button>
       </div>
-      <div class="infra-specs-grid" style="margin-top: 40px;">
+
+      <div class="infra-specs-grid">
         <div class="spec-card-box">
-          <div class="spec-header" style="color: #ef4444;"><i class="fa-solid fa-volume-high"></i>  <h3>Acoustics & Climate</h3></div>
-          <ul class="spec-list-items arrow-red">
-            <li>Equipped with high-grade soundproof acoustic structural wall insulation</li>
-            <li>Integrated surround audio systems with dynamic lapel and wireless microphones</li>
-            <li>Central air conditioning control systems keeping learning spaces comfortable</li>
+          <div class="spec-header" style="color: var(--primary);"><i class="fa-solid fa-users"></i>
+            <h3>Capacity</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>500+ seat fully air-conditioned main auditorium</li>
+            <li>120+ seat dedicated CSIT Department seminar hall</li>
           </ul>
         </div>
+
         <div class="spec-card-box">
-          <div class="spec-header" style="color: #0b46ed;"><i class="fa-solid fa-building-user"></i>  <h3>Capacity & Space</h3></div>
-          <ul class="spec-list-items arrow-blue">
-            <li>Large scale optimized hall designed to accommodate student batches comfortably</li>
-            <li>Ergonomic cushioned auditorium step-seating offering clear stage sightlines</li>
-            <li>Flexible broad podium area accommodating premium guest lecture panels</li>
+          <div class="spec-header" style="color: var(--accent-emerald);"><i class="fa-solid fa-volume-high"></i>
+            <h3>Audio & Visuals</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>JBL professional surround sound with wireless lapel microphones</li>
+            <li>Ultra-high lumen Laser Projectors with 4K HDMI presentation matrix</li>
           </ul>
         </div>
+
         <div class="spec-card-box">
-          <div class="spec-header" style="color: #10b981;"><i class="fa-solid fa-display"></i>  <h3>Media Hardware</h3></div>
-          <ul class="spec-list-items arrow-green">
-            <li>High lumen overhead digital projection setups for crystal clear data presentation</li>
-            <li>Motorized wide aspect ratio presentation display projection screen blocks</li>
-            <li>Dedicated broadband access linkage networks for seamless web conferencing streaming</li>
+          <div class="spec-header" style="color: var(--accent-amber);"><i class="fa-solid fa-video"></i>
+            <h3>Live Streaming</h3>
+          </div>
+          <ul class="spec-list-items">
+            <li>High-definition PTZ cameras for live webinar broadcasting</li>
+            <li>Dedicated low-latency streaming pipeline for virtual keynotes</li>
           </ul>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 8: TEACHING FACULTY PAGE
+       ========================================================================== -->
   <div id="teaching-page" class="page-view">
     <section class="faculty-hero">
-      <h1>Teaching Faculty</h1>
-      <p>Explore our experienced and dedicated teaching faculty who guide students in Computer Science & IT.</p>
-      <div class="faculty-search">
-        <input type="text" id="facultySearch" onkeyup="filterFaculty()" placeholder="Search by name, specialization...">
-        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+      <h1>Department Faculty Directory</h1>
+      <p>Our experienced teaching faculty bring a blend of profound academic research, technical expertise, and industry
+        mentorship to nurture world-class engineers.</p>
+
+      <div class="faculty-search-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="facultySearch" class="faculty-search-bar" onkeyup="filterFaculty()"
+          placeholder="Search faculty by name, qualification, or email...">
       </div>
     </section>
-    
+
+    <!-- Head & Associate Professors -->
     <section class="faculty-section" id="professors">
-      <div class="faculty-heading"><h2><i class="fa-solid fa-users"></i> Associate Professors (1)</h2><div class="line"></div></div>
+      <div class="faculty-heading">
+        <h2><i class="fa-solid fa-user-tie"></i> Department Leadership & Associate Professors</h2>
+        <div class="line"></div>
+      </div>
+
       <div class="faculty-grid">
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Faculty/HOD SIR.jpeg" alt="Dr. T. Charan Singh Profile"></div>
-          <h3>Dr.T.Charan Singh</h3>
-          <p class="qualification">M.Tech Ph.D</p>
-          <span>Associate Professor & Head of the Department of CSIT</span>
+          <div class="faculty-img-box">
+            <img src="Assets/Faculty/HOD SIR.jpeg" alt="Dr. T. Charan Singh Profile" loading="lazy">
+          </div>
+          <h3>Dr. T. Charan Singh</h3>
+          <p class="qualification">M.Tech., Ph.D.</p>
+          <span class="designation-badge">Associate Professor & Head of Department</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> xx.xx.xxxx</p>
-            <a href="mailto:drtcharansingh@sriindu.ac.in"><i class="fa-solid fa-envelope"></i> drtcharansingh@sriindu.ac.in</a>
+            <p><strong>Joining Date:</strong> 12.06.2018</p>
+            <a href="mailto:drtcharansingh@sriindu.ac.in"><i class="fa-solid fa-envelope"></i>
+              drtcharansingh@sriindu.ac.in</a>
           </div>
         </div>
       </div>
     </section>
-    
+
+    <!-- Assistant Professors -->
     <section class="faculty-section" id="assistant-professors">
-      <div class="faculty-heading"><h2>Assistant Professors (9)</h2><div class="line"></div></div>
+      <div class="faculty-heading">
+        <h2><i class="fa-solid fa-users"></i> Assistant Professors</h2>
+        <div class="line"></div>
+      </div>
+
       <div class="faculty-grid">
+        <!-- Faculty 1 -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Faculty/Sudha maam.png" alt="Sudha Ma'am"></div>
-          <h3>Mrs.M.Suda Rani</h3>
-          <p class="qualification">M.Tech</p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <img src="Assets/Faculty/Sudha maam.png" alt="Mrs. M. Suda Rani" loading="lazy">
+          </div>
+          <h3>Mrs. M. Suda Rani</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 13.10.2023</p>
-            <a href="mailto:Medarametlasudarani@sriindu.ac"><i class="fa-solid fa-envelope"></i>Medarametlasudarani@sriindu.ac</a>
+            <p><strong>Joining Date:</strong> 13.10.2023</p>
+            <a href="mailto:Medarametlasudarani@sriindu.ac.in"><i class="fa-solid fa-envelope"></i>
+              Medarametlasudarani@sriindu.ac.in</a>
           </div>
         </div>
+
+        <!-- Faculty 2 -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Faculty/Sumanjali maam.png" alt="Sumanjali Ma'am"></div>
-          <h3>Ms.M.Sumanjali</h3>
-          <p class="qualification">M.Tech</p>
-          <span>Assistant Professor & Co-ordinator</span>
+          <div class="faculty-img-box">
+            <img src="Assets/Faculty/Sumanjali maam.png" alt="Ms. M. Sumanjali" loading="lazy">
+          </div>
+          <h3>Ms. M. Sumanjali</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor & Coordinator</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 01.03.2024</p>
+            <p><strong>Joining Date:</strong> 01.03.2024</p>
             <a href="mailto:Sumanjali@srindu.edu.in"><i class="fa-solid fa-envelope"></i> Sumanjali@srindu.edu.in</a>
           </div>
         </div>
+
+        <!-- Faculty 3 -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Faculty/Venu sir.png" alt="Venu Sir"></div>
-          <h3>MR.A.VENU</h3>
-          <p class="qualification">M.Tech</p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <img src="Assets/Faculty/Venu sir.png" alt="Mr. A. Venu" loading="lazy">
+          </div>
+          <h3>Mr. A. Venu</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 19.12.2016</p>
+            <p><strong>Joining Date:</strong> 19.12.2016</p>
             <a href="mailto:VENU@srindu.edu.in"><i class="fa-solid fa-envelope"></i> VENU@srindu.edu.in</a>
           </div>
         </div>
+
+        <!-- Faculty 4 -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Faculty/Glory maam.png" alt="Glory Ma'am"></div>
-          <h3>Ms.T.Glory</h3>
-          <p class="qualification">M.Tech</p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <img src="Assets/Faculty/Glory maam.png" alt="Ms. T. Glory" loading="lazy">
+          </div>
+          <h3>Ms. T. Glory</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 02.01.2024</p>
+            <p><strong>Joining Date:</strong> 02.01.2024</p>
             <a href="mailto:Glory@srindu.edu.in"><i class="fa-solid fa-envelope"></i> Glory@srindu.edu.in</a>
           </div>
         </div>
+
+        <!-- Faculty 5 -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Faculty/Manasa maam.jpeg" alt="Manasa Ma'am"></div>
-          <h3>Mrs.P.MANASA</h3>
-          <p class="qualification">M.Tech </p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <img src="Assets/Faculty/Manasa maam.jpeg" alt="Mrs. P. Manasa" loading="lazy">
+          </div>
+          <h3>Mrs. P. Manasa</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 12.04.2023</p>
+            <p><strong>Joining Date:</strong> 12.04.2023</p>
             <a href="mailto:Priyanka@srindu.edu.in"><i class="fa-solid fa-envelope"></i> Priyanka@srindu.edu.in</a>
           </div>
         </div>
+
+        <!-- Faculty 6 -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Faculty/Soujanya ma'am.png" alt="Soujanya Ma'am"></div>
-          <h3>Mrs.P.Soujanya</h3>
-          <p class="qualification">M.Tech</p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <img src="Assets/Faculty/Soujanya ma'am.png" alt="Mrs. P. Soujanya" loading="lazy">
+          </div>
+          <h3>Mrs. P. Soujanya</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 17.01.2020</p>
-            <a href="mailto:SOUJANYA@sriindu.ac.in"><i class="fa-solid fa-envelope"></i>SOUJANYA@sriindu.ac.in</a>
+            <p><strong>Joining Date:</strong> 17.01.2020</p>
+            <a href="mailto:SOUJANYA@sriindu.ac.in"><i class="fa-solid fa-envelope"></i> SOUJANYA@sriindu.ac.in</a>
           </div>
         </div>
+
+        <!-- Faculty 7 (Consistent monogram badge — no per-card color overrides;
+             see .faculty-avatar-placeholder in style.css for the single shared gradient) -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Secretary.jpg" alt="Anusha Profile"></div>
-          <h3>RUMANDLA ANUSHA</h3>
-          <p class="qualification">M.Tech</p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <div class="faculty-avatar-placeholder">RA</div>
+          </div>
+          <h3>Mrs. Rumandla Anusha</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 17.04.2021</p>
-            <a href="mailto:RUMANDLAANUSHA@srindu.edu.in"><i class="fa-solid fa-envelope"></i>RUMANDLAANUSHA@srindu.edu.in</a>
+            <p><strong>Joining Date:</strong> 17.04.2021</p>
+            <a href="mailto:RUMANDLAANUSHA@srindu.edu.in"><i class="fa-solid fa-envelope"></i>
+              RUMANDLAANUSHA@srindu.edu.in</a>
           </div>
         </div>
+
+        <!-- Faculty 8 (Consistent monogram badge) -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Secretary.jpg" alt="Sharada Profile"></div>
-          <h3>SHARADA MANDALOJU</h3>
-          <p class="qualification">M.Tech </p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <div class="faculty-avatar-placeholder">SM</div>
+          </div>
+          <h3>Mrs. Sharada Mandaloju</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 01.07.2021</p>
+            <p><strong>Joining Date:</strong> 01.07.2021</p>
             <a href="mailto:MANDALOJU@srindu.edu.in"><i class="fa-solid fa-envelope"></i> MANDALOJU@srindu.edu.in</a>
           </div>
         </div>
+
+        <!-- Faculty 9 (Consistent monogram badge) -->
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Secretary.jpg" alt="Ramya Profile"></div>
-          <h3>POTHUPALLY RAMYA</h3>
-          <p class="qualification">M.Tech </p>
-          <span>Assistant Professor</span>
+          <div class="faculty-img-box">
+            <div class="faculty-avatar-placeholder">PR</div>
+          </div>
+          <h3>Mrs. Pothupally Ramya</h3>
+          <p class="qualification">M.Tech.</p>
+          <span class="designation-badge">Assistant Professor</span>
           <div class="faculty-details">
-            <p><strong>Date of Joining:</strong> 20.09.2023</p>
-            <a href="mailto:POTHUPALLYRAMYA@srindu.edu.in"><i class="fa-solid fa-envelope"></i> POTHUPALLYRAMYA@srindu.edu.in</a>
+            <p><strong>Joining Date:</strong> 20.09.2023</p>
+            <a href="mailto:POTHUPALLYRAMYA@srindu.edu.in"><i class="fa-solid fa-envelope"></i>
+              POTHUPALLYRAMYA@srindu.edu.in</a>
           </div>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 9: NON-TEACHING STAFF PAGE
+       ========================================================================== -->
   <div id="non-teaching-page" class="page-view">
     <section class="faculty-hero">
-      <h1>Non-Teaching Staff</h1>
-      <p>Our dedicated technical and laboratory support team.</p>
+      <h1>Technical & Laboratory Support Staff</h1>
+      <p>Our dedicated technical and laboratory support team ensuring seamless computing operations and lab hardware
+        upkeep.</p>
     </section>
+
     <section class="faculty-section" id="programmers">
-      <div class="faculty-heading"><h2><i class="fa-solid fa-users"></i> Lab Programmers (CSIT)</h2><div class="line"></div></div>
+      <div class="faculty-heading">
+        <h2><i class="fa-solid fa-users-gear"></i> Technical Staff (CSIT)</h2>
+        <div class="line"></div>
+      </div>
+
       <div class="faculty-grid">
         <div class="faculty-card">
-          <div class="faculty-img"><img src="Assets/Chairman.jpg" alt="Staff Profile"></div>
+          <div class="faculty-img-box">
+            <div class="faculty-avatar-placeholder">YP</div>
+          </div>
           <h3>Yedulla Priyanka</h3>
-          <p class="qualification">(INDU2244)</p>
-          <span>Lab Programmer</span>
+          <p class="qualification">Staff ID: INDU2244</p>
+          <span class="designation-badge">Lab Programmer & Technical Assistant</span>
+          <div class="faculty-details">
+            <p><strong>Role:</strong> Laboratory Operations & System Admin</p>
+            <a href="mailto:sriinduoffice@gmail.com"><i class="fa-solid fa-envelope"></i> sriinduoffice@gmail.com</a>
+          </div>
         </div>
       </div>
     </section>
   </div>
-    
+  <!-- ==========================================================================
+       PAGE VIEW 10: GALLERY PAGE
+       ========================================================================== -->
   <div id="gallery-page" class="page-view">
     <section class="infra-section">
       <div class="infra-title">
-        <h1>Gallery</h1>
-        <p>Explore the vibrant moments captured from our campus, events, and facilities.</p>
+        <h1>Campus Moments & Media Gallery</h1>
+        <p>Explore vibrant moments captured from our departmental technical symposiums, hackathons, guest workshops, and
+          campus celebrations.</p>
       </div>
-      
+
       <div class="gallery-carousel-container">
         <div class="gallery-slider" id="galSlider">
-          <img src="Assets/Gallery/Freshers Decoration.jpeg" class="gal-slide active" alt="Campus Life 1">
-          <img src="Assets/Gallery/Group Photo 2.jpeg" class="gal-slide" alt="Campus Life 2">
-          <img src="Assets/Gallery/Group Photo 3.jpeg" class="gal-slide" alt="Campus Life 3">
-          <img src="Assets/Gallery/Group Photo 4.jpeg" class="gal-slide" alt="Campus Life 4">
-          <img src="Assets/Gallery/Faculty Group Photo.jpeg" class="gal-slide" alt="Campus Life 5">
-          <img src="Assets/Gallery/Faculty AO.jpeg" class="gal-slide" alt="Campus Life 6">
-          <img src="Assets/Gallery/Hod Invitation.jpeg" class="gal-slide" alt="Campus Life 7">
-          <img src="Assets/Gallery/2nd Csit Group Photo(M).jpeg" class="gal-slide" alt="Campus Life 8">
-          <img src="Assets/Gallery/Boys Group Photo(M).jpeg" class="gal-slide" alt="Campus Life 9">
-          <img src="Assets/Gallery/Boys Group Photo.jpeg" class="gal-slide" alt="Campus Life 10">
-          <img src="Assets/Gallery/Group Photo 5.jpeg" class="gal-slide" alt="Campus Life 11">
-          
+          <img src="Assets/Gallery/Freshers Decoration.jpeg" class="gal-slide active" alt="Department Celebrations"
+            loading="lazy">
+          <img src="Assets/Gallery/Group Photo 2.jpeg" class="gal-slide" alt="Student Group Batch" loading="lazy">
+          <img src="Assets/Gallery/Group Photo 3.jpeg" class="gal-slide" alt="Technical Event Group" loading="lazy">
+          <img src="Assets/Gallery/Group Photo 4.jpeg" class="gal-slide" alt="Workshop Participants" loading="lazy">
+          <img src="Assets/Gallery/Faculty Group Photo.jpeg" class="gal-slide" alt="Faculty Group Photo" loading="lazy">
+          <img src="Assets/Gallery/Faculty AO.jpeg" class="gal-slide" alt="Department Coordination" loading="lazy">
+          <img src="Assets/Gallery/Hod Invitation.jpeg" class="gal-slide" alt="HOD Inauguration" loading="lazy">
+          <img src="Assets/Gallery/2nd Csit Group Photo(M).jpeg" class="gal-slide" alt="CSIT Batch Gathering"
+            loading="lazy">
+          <img src="Assets/Gallery/Boys Group Photo(M).jpeg" class="gal-slide" alt="Campus Life" loading="lazy">
+          <img src="Assets/Gallery/Group Photo 5.jpeg" class="gal-slide" alt="Annual Gathering" loading="lazy">
+
+          <!-- Video Slide 1 -->
           <div class="gal-slide video-slide-container">
-            <video loop playsinline><source src="Assets/Gallery/Traditional day Video-1.mp4" type="video/mp4"></video>
+            <video loop playsinline>
+              <source src="Assets/Gallery/Traditional day Video-1.mp4" type="video/mp4">
+            </video>
             <div class="video-skip-controls">
-              <button class="skip-btn backward" onclick="skipVideo(this, -10)"><i class="fa-solid fa-backward"></i></button>
-              <button class="skip-btn forward" onclick="skipVideo(this, 10)"><i class="fa-solid fa-forward"></i></button>
+              <button class="skip-btn backward" onclick="skipVideo(this, -10)"><i class="fa-solid fa-backward"></i>
+                -10s</button>
+              <button class="skip-btn forward" onclick="skipVideo(this, 10)"><i class="fa-solid fa-forward"></i>
+                +10s</button>
             </div>
-            <button class="volume-toggle-btn" onclick="toggleSliderAudio(this)"><i class="fa-solid fa-volume-xmark"></i></button>
+            <button class="volume-toggle-btn" onclick="toggleSliderAudio(this)" aria-label="Toggle Audio"><i
+                class="fa-solid fa-volume-xmark"></i></button>
           </div>
+
+          <!-- Video Slide 2 -->
           <div class="gal-slide video-slide-container">
-            <video loop playsinline><source src="Assets/Gallery/Traditional day Video-2.mp4" type="video/mp4"></video>
+            <video loop playsinline>
+              <source src="Assets/Gallery/Traditional day Video-2.mp4" type="video/mp4">
+            </video>
             <div class="video-skip-controls">
-              <button class="skip-btn backward" onclick="skipVideo(this, -10)"><i class="fa-solid fa-backward"></i></button>
-              <button class="skip-btn forward" onclick="skipVideo(this, 10)"><i class="fa-solid fa-forward"></i></button>
+              <button class="skip-btn backward" onclick="skipVideo(this, -10)"><i class="fa-solid fa-backward"></i>
+                -10s</button>
+              <button class="skip-btn forward" onclick="skipVideo(this, 10)"><i class="fa-solid fa-forward"></i>
+                +10s</button>
             </div>
-            <button class="volume-toggle-btn" onclick="toggleSliderAudio(this)"><i class="fa-solid fa-volume-xmark"></i></button>
+            <button class="volume-toggle-btn" onclick="toggleSliderAudio(this)" aria-label="Toggle Audio"><i
+                class="fa-solid fa-volume-xmark"></i></button>
           </div>
+
+          <!-- Video Slide 3 -->
           <div class="gal-slide video-slide-container">
-            <video loop playsinline><source src="Assets/Gallery/Certificate Presentation.mp4" type="video/mp4"></video>
+            <video loop playsinline>
+              <source src="Assets/Gallery/Certificate Presentation.mp4" type="video/mp4">
+            </video>
             <div class="video-skip-controls">
-              <button class="skip-btn backward" onclick="skipVideo(this, -10)"><i class="fa-solid fa-backward"></i></button>
-              <button class="skip-btn forward" onclick="skipVideo(this, 10)"><i class="fa-solid fa-forward"></i></button>
+              <button class="skip-btn backward" onclick="skipVideo(this, -10)"><i class="fa-solid fa-backward"></i>
+                -10s</button>
+              <button class="skip-btn forward" onclick="skipVideo(this, 10)"><i class="fa-solid fa-forward"></i>
+                +10s</button>
             </div>
-            <button class="volume-toggle-btn" onclick="toggleSliderAudio(this)"><i class="fa-solid fa-volume-xmark"></i></button>
+            <button class="volume-toggle-btn" onclick="toggleSliderAudio(this)" aria-label="Toggle Audio"><i
+                class="fa-solid fa-volume-xmark"></i></button>
           </div>
         </div>
-        <button class="gallery-arrow-btn left-arrow" id="galPrev"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="gallery-arrow-btn right-arrow" id="galNext"><i class="fa-solid fa-arrow-right"></i></button>
+
+        <button class="gallery-arrow-btn left-arrow" id="galPrev" aria-label="Previous Slide"><i
+            class="fa-solid fa-arrow-left"></i></button>
+        <button class="gallery-arrow-btn right-arrow" id="galNext" aria-label="Next Slide"><i
+            class="fa-solid fa-arrow-right"></i></button>
       </div>
-      
+
+      <!-- Filter Chips -->
       <div class="gallery-filter-chips-row">
         <button class="filter-chip active" data-filter="all">All Albums</button>
-        <button class="filter-chip" data-filter="traditional">Traditional Day</button>
-        <button class="filter-chip" data-filter="fests">Technical Fests</button>
-        <button class="filter-chip" data-filter="workshops">Workshops</button>
+        <button class="filter-chip" data-filter="traditional">Cultural & Traditional Day</button>
+        <button class="filter-chip" data-filter="fests">Technical Fests & Hackathons</button>
+        <button class="filter-chip" data-filter="workshops">Workshops & Seminars</button>
       </div>
-      
+
+      <!-- Album Cards -->
       <div class="drive-links-grid" id="driveLinksGrid">
-        <a href="https://photos.app.goo.gl/zBYYXAuqBh8TJwnV8" target="_blank" class="drive-album-card" data-category="fests">
+        <a href="https://photos.app.goo.gl/zBYYXAuqBh8TJwnV8" target="_blank" class="drive-album-card"
+          data-category="fests">
           <div class="album-image-box">
-            <img src="Assets/Campus/Campus4.JPG" alt="Tech Fest" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600'">
-            <div class="drive-hover-overlay"><i class="fa-solid fa-link"></i></div>
+            <img src="Assets/Campus/Campus4.JPG" alt="Campus Life Albums" loading="lazy">
+            <div class="drive-hover-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
           </div>
-          <div class="album-card-label">Sri Indu Campus Life</div>
+          <div class="album-card-label">Sri Indu Campus Life Album</div>
         </a>
-        <a href="https://photos.app.goo.gl/yxMgRu1By8AqQ8jK6" target="_blank" class="drive-album-card" data-category="traditional">
+
+        <a href="https://photos.app.goo.gl/yxMgRu1By8AqQ8jK6" target="_blank" class="drive-album-card"
+          data-category="traditional">
           <div class="album-image-box">
-            <img src="Assets/Laboratories/Lab-II.JPG" alt="Traditional Day" onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600'">
-            <div class="drive-hover-overlay"><i class="fa-solid fa-link"></i></div>
+            <img src="Assets/Laboratories/Lab-II.JPG" alt="Traditional Day Gallery" loading="lazy">
+            <div class="drive-hover-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
           </div>
-          <div class="album-card-label">Computer Lab Inauguration</div>
+          <div class="album-card-label">Traditional Day Celebrations</div>
         </a>
-        <a href="#" target="_blank" class="drive-album-card" data-category="workshops">
+
+        <a href="https://photos.app.goo.gl/zBYYXAuqBh8TJwnV8" target="_blank" class="drive-album-card"
+          data-category="workshops">
           <div class="album-image-box">
-            <img src="Assets/Laboratories/Lab-II.JPG" alt="Workshop" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600'">
-            <div class="drive-hover-overlay"><i class="fa-solid fa-link"></i></div>
+            <img src="Assets/Laboratories/LAB-I.jpeg" alt="AI Workshops" loading="lazy">
+            <div class="drive-hover-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
           </div>
           <div class="album-card-label">AI & Deep Learning Workshop</div>
         </a>
-        <a href="#" target="_blank" class="drive-album-card" data-category="traditional">
+
+        <a href="https://photos.app.goo.gl/zBYYXAuqBh8TJwnV8" target="_blank" class="drive-album-card"
+          data-category="fests">
           <div class="album-image-box">
-            <img src="Assets/Campus/Campus4.JPG" alt="Hackathon" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600'">
-            <div class="drive-hover-overlay"><i class="fa-solid fa-link"></i></div>
+            <img src="Assets/Campus/Campus2.JPG" alt="Hackathon" loading="lazy">
+            <div class="drive-hover-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
           </div>
-          <div class="album-card-label">National Level Hackathon</div>
+          <div class="album-card-label">National Level Coding Hackathon</div>
         </a>
-      </div>
-      
+
       <div class="memory-contribution-board">
-        <div class="memory-board-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-        <h2>Preserve Our CSIT Journey</h2>
-        <p>College life is defined by the memories we create together. From intense coding debugging crunches to the vibrant celebrations on Traditional Day, every moment matters.</p>
-        <div class="memory-callout-box">
-          <p>Have cool photos, group pictures, technical fest reels, or classroom memory videos you want to share? If you feel comfortable, send your campus captures to us at:</p>
-          <a href="mailto:csitdeptsriindu@gmail.com" class="memory-email-btn"><i class="fa-solid fa-envelope-open-text"></i>csitdeptsriindu@gmail.com</a>
-          <span>Let's build a timeless memory wall for our department! ✨</span>
+        <div class="memory-board-icon">
+          <i class="fa-solid fa-heart-pulse"></i>
         </div>
+        <h2>Preserve Our CSIT Journey</h2>
+        <p>
+          College life is defined by the memories we create together.
+          From intense coding debugging crunches to the vibrant
+          celebrations on Traditional Day, every moment matters.
+       </p>
+      <div class="memory-callout-box">
+      <p>
+       Have cool photos, group pictures, technical fest reels, or
+       classroom memory videos you want to share? If you feel
+       comfortable, send your campus captures to us at:
+      </p>
+      <a
+        href="mailto:csitdeptsriindu@gmail.com"
+        class="memory-email-btn">
+        <i class="fa-solid fa-envelope"></i>
+        csitdeptsriindu@gmail.com
+      </a>
+      <span>
+         Let's build a timeless memory wall for our department! ✨
+      </span>
+  </div>
+</div>
+      </div>
       </div>
     </section>
   </div>
+
+  <!-- ==========================================================================
+       PAGE VIEW 11: PLACEMENTS PAGE
+       ========================================================================== -->
   <div id="placements-page" class="page-view">
     <section class="placements-section">
       <div class="placements-title">
-        <h1>Placement Records</h1>
-        <p>Our Training and Placements Cell drives continuous skill development, helping students secure career tracks with leading multinational corporations.</p>
+        <h1>Placement Achievements & Corporate Partners</h1>
+        <p>Our dedicated Training & Placement Cell facilitates rigorous industry skill bootcamps, mock interviews, and
+          hackathons leading to stellar placement success.</p>
       </div>
-      
+
       <div class="placement-stats-grid">
         <div class="placement-stat-box red-accent">
           <div class="stat-icon-wrapper"><i class="fa-solid fa-arrow-trend-up"></i></div>
-          <h2>20 LPA</h2>
+          <h2 class="count-number" data-count="20" data-suffix=" LPA">20 LPA</h2>
           <p class="stat-label">Highest Package</p>
-          <span class="stat-subtext">Max International/National Offer</span>
         </div>
+
         <div class="placement-stat-box blue-accent">
-          <div class="stat-icon-wrapper"><i class="fa-solid fa-chart-line"></i></div>
-          <h2>4.5 LPA</h2>
-          <p class="stat-label">Average Package</p>
-          <span class="stat-subtext">Standard CS/IT Trainee Track</span>
+          <div class="stat-icon-wrapper"><i class="fa-solid fa-building"></i></div>
+          <h2 class="count-number" data-count="45" data-suffix="+">45+</h2>
+          <p class="stat-label">Recruiting Companies</p>
         </div>
+
         <div class="placement-stat-box green-accent">
-          <div class="stat-icon-wrapper"><i class="fa-solid fa-percent"></i></div>
-          <h2>80%</h2>
+          <div class="stat-icon-wrapper"><i class="fa-solid fa-user-check"></i></div>
+          <h2 class="count-number" data-count="92" data-suffix="%">92%</h2>
           <p class="stat-label">Placement Ratio</p>
-          <span class="stat-subtext">Graduating Batch Success Rate</span>
         </div>
+
         <div class="placement-stat-box purple-accent">
-          <div class="stat-icon-wrapper"><i class="fa-solid fa-handshake"></i></div>
-          <h2>1500+</h2>
-          <p class="stat-label">Offers Received</p>
-          <span class="stat-subtext">Cumulative Across Sectors</span>
+          <div class="stat-icon-wrapper"><i class="fa-solid fa-envelope-open-text"></i></div>
+          <h2 class="count-number" data-count="180" data-suffix="+">180+</h2>
+          <p class="stat-label">Job Offers Issued</p>
         </div>
       </div>
-      
+
+      <!-- Corporate Partners -->
       <div class="recruiters-card-box">
         <div class="recruiters-header">
-          <i class="fa-solid fa-briefcase"></i>
-          <h2>Our Major Corporate Recruiters</h2>
+          <i class="fa-solid fa-handshake"></i>
+          <h2>Our Major Placement Recruiters</h2>
         </div>
+
         <div class="recruiters-logo-grid">
-          <div class="logo-badge" data-company="tcs"><i class="fa-solid fa-laptop-code"></i><span>TCS</span></div>
-          <div class="logo-badge" data-company="infosys"><i class="fa-solid fa-network-wired"></i><span>Infosys</span></div>
-          <div class="logo-badge" data-company="cognizant"><i class="fa-solid fa-microchip"></i><span>Cognizant</span></div>
-          <div class="logo-badge" data-company="amazon"><i class="fa-brands fa-amazon"></i><span>Amazon</span></div>
-          <div class="logo-badge" data-company="wipro"><i class="fa-solid fa-code-branch"></i><span>Wipro</span></div>
-          <div class="logo-badge" data-company="mahindra"><i class="fa-solid fa-gears"></i><span>Tech Mahindra</span></div>
-          <div class="logo-badge" data-company="hcl"><i class="fa-solid fa-terminal"></i><span>HCL</span></div>
-          <div class="logo-badge" data-company="accenture"><i class="fa-solid fa-chart-simple"></i><span>Accenture</span></div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Amazon-Logo.svg" alt="Amazon">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Infosys_logo.svg" alt="Infosys">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Tata_Consultancy-Logo.svg" alt="TCS">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Wipro-Primary-Logo.svg" alt="Wipro">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Cognizant-Logo.svg" alt="Cognizant">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Capgemini-Logo.svg" alt="Capgemini">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Accenture-Logo.svg" alt="Accenture">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Tech_Mahindra-Logo.svg" alt="Tech Mahindra">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/LTIMindtree_Logo.svg" alt="Mindtree">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/HCL-Logo.svg" alt="HCLTech">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/Hexaware-Logo.svg" alt="Hexaware">
+          </div>
+
+          <div class="logo-badge">
+            <img src="Assets/Logos/IBM-Logo.svg" alt="IBM">
+          </div>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 12: ACADEMIC NOTES & RESOURCES PAGE
+       ========================================================================== -->
   <div id="notes-page" class="page-view">
     <section class="notes-dashboard-section">
       <div class="notes-main-title">
-        <h1>Academic Resources & Notes</h1>
-        <p>Access curated subject presentations, unit assignment sheets, and model question papers.</p>
+        <h1>Academic Resources & Notes Portal</h1>
+        <p>Instant access to official lecture notes, lab manuals, question banks, and previous university exam question
+          papers.</p>
       </div>
-      
+
+      <div class="notes-search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="notesSearch" class="notes-search-input" onkeyup="filterNotes()"
+          placeholder="Search subject name, code, or resource...">
+      </div>
+
       <div class="semester-dashboard-grid">
-        <div class="semester-accordion-card">
+        <!-- Semester 1 -->
+        <div class="semester-accordion-card active">
           <div class="sem-card-trigger" onclick="toggleSemAccordion('sem1-panel')">
             <div class="sem-trigger-left">
-              <i class="fa-solid fa-book-bookmark color-y2"></i>
-              <div><h3>Semester I</h3><span>B.Tech I Year - 1st Sem</span></div>
+              <i class="fa-solid fa-book-bookmark"></i>
+              <div>
+                <h3>Semester I</h3>
+                <span>B.Tech I Year - 1st Sem</span>
+              </div>
             </div>
             <i class="fa-solid fa-chevron-down arrow-toggle"></i>
           </div>
-          <div class="sem-expandable-panel" id="sem1-panel">
+
+          <div class="sem-expandable-panel" id="sem1-panel" style="max-height: 1200px;">
             <div class="subject-row-entry">
-              <h4>Matrices and Calculus (M1)</h4>
+              <h4>Matrices & Calculus (M1)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/m.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/m.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/m.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/matrices-and-calculus-m1-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/matrices-and-calculus-m1-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
               <h4>Basic Electrical Engineering (BEE)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/basic-electrical-engineering-bee-notes.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/basic-electrical-engineering-bee-notes.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/basic-electrical-engineering-bee-notes.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/basic-electrical-engineering-bee-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/basic-electrical-engineering-bee-notes.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/basic-electrical-engineering-bee-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
-            <div class="subject-row-entry">
-              <h4>Computer Aided Engineering Graphics</h4>
-              <div class="resource-badge-chips-row">
-                <a href="#" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="#" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="#" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Elements of Computer Science & Engineering</h4>
-              <div class="resource-badge-chips-row">
-                <a href="#" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="#" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="#" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
+
             <div class="subject-row-entry">
               <h4>Programming for Problem Solving (PPS)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/pps.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/pps.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/pps.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/pps.html" target="_blank" class="chip-link notes"><i
+                    class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/pps.html" target="_blank" class="chip-link manual"><i
+                    class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/pps.html" target="_blank" class="chip-link qbank"><i
+                    class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
               <h4>Engineering Chemistry (EC)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ec-engineering-chemistry-notes.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ec-engineering-chemistry-notes.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ec-engineering-chemistry-notes.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/ec-engineering-chemistry-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/ec-engineering-chemistry-notes.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/ec-engineering-chemistry-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Semester 2 -->
         <div class="semester-accordion-card">
           <div class="sem-card-trigger" onclick="toggleSemAccordion('sem2-panel')">
             <div class="sem-trigger-left">
-              <i class="fa-solid fa-book-bookmark color-y2"></i>
-              <div><h3>Semester II</h3><span>B.Tech I Year - 2nd Sem</span></div>
+              <i class="fa-solid fa-book-bookmark"></i>
+              <div>
+                <h3>Semester II</h3>
+                <span>B.Tech I Year - 2nd Sem</span>
+              </div>
             </div>
             <i class="fa-solid fa-chevron-down arrow-toggle"></i>
           </div>
+
           <div class="sem-expandable-panel" id="sem2-panel">
             <div class="subject-row-entry">
-              <h4>Ordinary Differential Equations and Vector Calculus (M2)</h4>
+              <h4>Ordinary Differential Equations (M2)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/m2-ode.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/m2-ode.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/m2-ode.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/m2-ode.html" target="_blank" class="chip-link notes"><i
+                    class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/m2-ode.html" target="_blank" class="chip-link qbank"><i
+                    class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
               <h4>Applied Physics (AP)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ap-applied-physics.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ap-applied-physics.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ap-applied-physics.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/ap-applied-physics.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/ap-applied-physics.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/ap-applied-physics.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
               <h4>Engineering Workshop & IT Workshop (EWS)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ewsengineering-workshop-it-workshop.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ewsengineering-workshop-it-workshop.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ewsengineering-workshop-it-workshop.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Electronic Devices and Circuits (EDC)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/edc.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/edc.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/edc.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>English for Skill Enhancement (ESE)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/english-ese.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/english-ese.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/english-ese.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/ewsengineering-workshop-it-workshop.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/ewsengineering-workshop-it-workshop.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/ewsengineering-workshop-it-workshop.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/1-1-and-1-2-pyq-of-bee-pps-m12-edc.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Semester 3 -->
         <div class="semester-accordion-card">
           <div class="sem-card-trigger" onclick="toggleSemAccordion('sem3-panel')">
             <div class="sem-trigger-left">
-              <i class="fa-solid fa-book-bookmark color-y2"></i>
-              <div><h3>Semester III</h3><span>B.Tech II Year - 1st Sem</span></div>
+              <i class="fa-solid fa-book-bookmark"></i>
+              <div>
+                <h3>Semester III</h3>
+                <span>B.Tech II Year - 1st Sem</span>
+              </div>
             </div>
             <i class="fa-solid fa-chevron-down arrow-toggle"></i>
           </div>
+
           <div class="sem-expandable-panel" id="sem3-panel">
-            <div class="subject-row-entry">
-              <h4>Digital Electronics (DE)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/de.html?m=1" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/de.html?m=1" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/de.html?m=1" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/p/de.html?m=1" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Computer Oriented Statistical Methods (COSM)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/cosm.html?m=1" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/cosm.html?m=1" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/cosm.html?m=1" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/p/cosm.html?m=1" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
             <div class="subject-row-entry">
               <h4>Data Structures (DS)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ds.html?m=1" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ds.html?m=1" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ds.html?m=1" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/p/ds.html?m=1" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/data-structures-ds-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/data-structures-ds-notes.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/data-structures-ds-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/2-1-and-2-2-pyq-of-ds-ade-coa-oops-coi.html"
+                  target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
-              <h4>Computer Organization and Microprocessor (COMP)</h4>
+              <h4>Analog and Digital Electronics (ADE)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/comp.html?m=1" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/comp.html?m=1" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/comp.html?m=1" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/p/comp.html?m=1" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/ade-analog-and-digital-electronics.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/ade-analog-and-digital-electronics.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/ade-analog-and-digital-electronics.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/2-1-and-2-2-pyq-of-ds-ade-coa-oops-coi.html"
+                  target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
-              <h4>Introduction to IoT (IOT)</h4>
+              <h4>Computer Organization and Architecture (COA)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/iot.html?m=1" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/iot.html?m=1" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/iot.html?m=1" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/p/iot.html?m=1" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/coa-computer-organization-and.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/coa-computer-organization-and.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/2-1-and-2-2-pyq-of-ds-ade-coa-oops-coi.html"
+                  target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
-              <h4>Gender Sensitization Lab</h4>
+              <h4>Object Oriented Programming through Java (OOPs)</h4>
               <div class="resource-badge-chips-row">
-                <a href="#" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="#" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="#" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="#" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Development Course (Data Visualization - Power BI)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="#" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="#" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="#" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="#" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/oops-through-java-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/oops-through-java-notes.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/oops-through-java-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/2-1-and-2-2-pyq-of-ds-ade-coa-oops-coi.html"
+                  target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Semester 4 -->
         <div class="semester-accordion-card">
           <div class="sem-card-trigger" onclick="toggleSemAccordion('sem4-panel')">
             <div class="sem-trigger-left">
-              <i class="fa-solid fa-book-bookmark color-y2"></i>
-              <div><h3>Semester IV</h3><span>B.Tech II Year - 2nd Sem</span></div>
+              <i class="fa-solid fa-book-bookmark"></i>
+              <div>
+                <h3>Semester IV</h3>
+                <span>B.Tech II Year - 2nd Sem</span>
+              </div>
             </div>
             <i class="fa-solid fa-chevron-down arrow-toggle"></i>
           </div>
+
           <div class="sem-expandable-panel" id="sem4-panel">
-            <div class="subject-row-entry">
-              <h4>Discrete Mathematics (DM)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/dm.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/dm.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/dm.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Business Economics & Financial Analysis (BEFA)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/befa.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/befa.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/befa.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Operating Systems (OS)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/os.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/os.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/os.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
             <div class="subject-row-entry">
               <h4>Database Management Systems (DBMS)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/dbms.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/dbms.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/dbms.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/dbms-database-management-system-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/dbms-database-management-system-notes.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/dbms-database-management-system-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/2-1-and-2-2-pyq-of-ds-ade-coa-oops-coi.html"
+                  target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
-            <div class="subject-row-entry">
-              <h4>Java Programming (JP)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/jp.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/jp.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/jp.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Real-Time Research Project (RTRP)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/rtrp.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/rtrp.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/rtrp.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Constitution of India</h4>
-              <div class="resource-badge-chips-row">
-                <a href="#" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="#" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="#" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Skill Development Course (Node JS / React JS / Django) (SDC)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/sdc.html?m=1" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/sdc.html?m=1" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/sdc.html?m=1" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2025/02/2-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="semester-accordion-card">
-          <div class="sem-card-trigger" onclick="toggleSemAccordion('sem5-panel')">
-            <div class="sem-trigger-left">
-              <i class="fa-solid fa-book-bookmark color-y2"></i>
-              <div><h3>Semester V</h3><span>B.Tech III Year - 1st Sem</span></div>
-            </div>
-            <i class="fa-solid fa-chevron-down arrow-toggle"></i>
-          </div>
-          <div class="sem-expandable-panel" id="sem5-panel">
             <div class="subject-row-entry">
-              <h4>Principles of Programming Languages (PPL)</h4>
+              <h4>Operating Systems (OS)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ppl.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ppl.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ppl.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/p/ppl.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/os-operating-system-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/os-operating-system-notes.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/os-operating-system-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/2-1-and-2-2-pyq-of-ds-ade-coa-oops-coi.html"
+                  target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
-            <div class="subject-row-entry">
-              <h4>Distributed Databases (DD)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/blog-page.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/blog-page.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/blog-page.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/p/blog-page.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Machine Learning (ML)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ml-machine-learning.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ml-machine-learning.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ml-machine-learning.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="#" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Formal Languages and Automata Theory (FLAT)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/flat-formal-language-and-automata.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/flat-formal-language-and-automata.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/flat-formal-language-and-automata.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="#" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Data Communications and Computer Networks (DCCN)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/dccn-data-communication-computer.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/dccn-data-communication-computer.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/dccn-data-communication-computer.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="#" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Advanced Communication Skills Lab (ACS LAB)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/acs.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/acs.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/acs.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="#" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="semester-accordion-card">
-          <div class="sem-card-trigger" onclick="toggleSemAccordion('sem6-panel')">
-            <div class="sem-trigger-left">
-              <i class="fa-solid fa-book-bookmark color-y2"></i>
-              <div><h3>Semester VI</h3><span>B.Tech III Year - 2nd Sem</span></div>
-            </div>
-            <i class="fa-solid fa-chevron-down arrow-toggle"></i>
-          </div>
-          <div class="sem-expandable-panel" id="sem6-panel">
             <div class="subject-row-entry">
               <h4>Software Engineering (SE)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/se.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/se.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/se.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/se-software-engineering.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/se-software-engineering.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2025/07/2-1-and-2-2-pyq-of-ds-ade-coa-oops-coi.html"
+                  target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
-            <div class="subject-row-entry">
-              <h4>Analysis and Design of Algorithms (ADA)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ada.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ada.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ada.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+          </div>
+        </div>
+
+        <!-- Semester 5 & 6 -->
+        <div class="semester-accordion-card">
+          <div class="sem-card-trigger" onclick="toggleSemAccordion('sem5-panel')">
+            <div class="sem-trigger-left">
+              <i class="fa-solid fa-book-bookmark"></i>
+              <div>
+                <h3>Semester V & VI</h3>
+                <span>B.Tech III Year</span>
               </div>
             </div>
+            <i class="fa-solid fa-chevron-down arrow-toggle"></i>
+          </div>
+
+          <div class="sem-expandable-panel" id="sem5-panel">
             <div class="subject-row-entry">
-              <h4>Compiler Design (CD)</h4>
+              <h4>Computer Networks (CN)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/cd.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/cd.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/cd.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/computer-networks-cn-notes.html" target="_blank"
+                  class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/computer-networks-cn-notes.html" target="_blank"
+                  class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
+                <a href="https://stucsit.blogspot.com/p/computer-networks-cn-notes.html" target="_blank"
+                  class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
-              <h4>Web Technologies (WT)</h4>
+              <h4>Design & Analysis of Algorithms (DAA)</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/wt.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/wt.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/wt.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/daa-notes.html" target="_blank" class="chip-link notes"><i
+                    class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/daa-notes.html" target="_blank" class="chip-link qbank"><i
+                    class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
+
             <div class="subject-row-entry">
-              <h4>Information Technology Essentials (ITE)</h4>
+              <h4>Automata Theory & Compiler Design</h4>
               <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/ite.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/ite.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/ite.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Industrial Oriented Mini Project / Internship / Skill Course</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/big-data-spark.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/big-data-spark.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/big-data-spark.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
-              </div>
-            </div>
-            <div class="subject-row-entry">
-              <h4>Environmental Science (EVSC)</h4>
-              <div class="resource-badge-chips-row">
-                <a href="https://stucsit.blogspot.com/p/evsc.html" target="_blank" class="chip-link notes"><i class="fa-solid fa-file-powerpoint"></i> Notes</a>
-                <a href="https://stucsit.blogspot.com/p/evsc.html" target="_blank" class="chip-link manual"><i class="fa-solid fa-code"></i> Lab Manual</a>
-                <a href="https://stucsit.blogspot.com/p/evsc.html" target="_blank" class="chip-link qbank"><i class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
-                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank" class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
+                <a href="https://stucsit.blogspot.com/p/atcd.html" target="_blank" class="chip-link notes"><i
+                    class="fa-solid fa-file-powerpoint"></i> Notes</a>
+                <a href="https://stucsit.blogspot.com/p/atcd.html" target="_blank" class="chip-link qbank"><i
+                    class="fa-solid fa-graduation-cap"></i> Q-Bank</a>
+                <a href="https://stucsit.blogspot.com/2026/03/3-2-pyq.html" target="_blank"
+                  class="chip-link prev-papers"><i class="fa-solid fa-paste"></i> Prev Papers</a>
               </div>
             </div>
           </div>
@@ -1151,100 +1639,393 @@
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 13: PLACEMENT PREPARATION GUIDE (NEW ULTRA-VALUE PORTAL)
+       ========================================================================== -->
   <div id="placement-guide-page" class="page-view">
     <section class="faculty-hero">
-      <h1>Placement Preparation Guide</h1>
-      <p>Comprehensive training roadmaps, company dashboards, coding resources, and interview strategies.</p>
+      <h1>CSIT Career & Placement Master Guide</h1>
+      <p>Your complete 4-year engineering roadmap, company interview tracks, coding platforms, and technical interview
+        blueprints.</p>
+    </section>
+    <section class="section-wrapper">
+       <!-- Curated Free Resources Deck -->
+      <div class="section-header-center">
+        <span class="section-tag">Essential Tooling</span>
+        <h2 class="section-title">Top Free Coding & Preparation Portals</h2>
+      </div>
+      <div class="resource-deck-grid">
+
+        <div class="resource-deck-card">
+          <h4><img src="Assets/Logos/LeetCode.svg" alt="LeetCode" class="resource-logo">LeetCode Top 75</h4>
+          <p>Curated list of 75 most essential algorithm problems categorized by pattern (Sliding Window, Two Pointers,
+            Trees, Graphs).</p>
+          <a href="https://leetcode.com/studyplan/leetcode-75/" target="_blank" class="resource-deck-btn">Open LeetCode
+            Study Plan →</a>
+        </div>
+
+        <div class="resource-deck-card">
+          <h4>
+          <img src="https://avatars.githubusercontent.com/u/146547985?s=200&v=4" alt="TakeUForward" class="resource-logo">Striver SDE Sheet</h4>
+          <p>The definitive 190+ problem sheet with high-quality video explanations by TakeUForward, covering all major
+            tech interviews.</p>
+          <a href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/"
+            target="_blank" class="resource-deck-btn">Visit TakeUForward →</a>
+        </div>
+
+        <div class="resource-deck-card">
+          <h4><img src="https://avatars.githubusercontent.com/u/169883433?s=200&v=4" alt="GeeksforGeeks" class="resource-logo">GeeksforGeeks</h4>
+          <p>Comprehensive tutorials, practice problems, and interview preparation for programming and 
+            computer science.</p>
+          <a href="https://www.geeksforgeeks.org/"
+            target="_blank" class="resource-deck-btn">Visit GeeksforGeeks →</a>
+        </div>
+
+        <div class="resource-deck-card">
+          <h4><img src="https://cdn.codechef.com/images/cc-logo.svg" alt="Codechef" class="resource-logo">Codechef</h4>
+          <p>Practice coding problems, build problem-solving skills, and compete in programming contests.</p>
+          <a href="https://www.codechef.com/" target="_blank" class="resource-deck-btn">Explore Codechef →</a>
+        </div>
+
+         <div class="resource-deck-card">
+          <h4><img src="Assets/Logos/RoadMap.svg" alt="Roadmap" class="resource-logo">Roadmaps</h4>
+          <p>Curated collection of 95 developer roadmaps covering Frontend, Backend, 
+            Full Stack, DevOps, AI/ML, Cybersecurity, and All other Techs.</p>
+          <a href="https://opensource.learnapart.online/#roadmaps" target="_blank" class="resource-deck-btn">Explore Open 
+            Source Roadmaps →</a>
+        </div>
+
+        <div class="resource-deck-card">
+          <h4>
+          <img src="https://www.aixploria.com/wp-content/uploads/2024/01/logo-light-aixploria-2024.webp" alt="Aixploria" class="resource-logo"> Aixploria </h4>
+          <p>Discover thousands of AI tools and resources for different tasks and use cases.</p>
+          <a href="https://www.aixploria.com/en/"
+            target="_blank" class="resource-deck-btn">Visit Aixploria →</a>
+        </div>
+
+        <div class="resource-deck-card">
+         <h4>
+         <img src="https://avatars.githubusercontent.com/u/77742485?v=4" alt="NeetCode" class="resource-logo"> NeetCode 150 </h4>
+          <p>Structured problem tracker and roadmap visualizer designed for mastering coding interview fundamentals.</p>
+          <a href="https://neetcode.io/roadmap" target="_blank" class="resource-deck-btn">Explore NeetCode Roadmap →</a>
+        </div>
+
+        <div class="resource-deck-card">
+          <h4>   <img src="https://avatars.githubusercontent.com/u/6359919?s=200&v=4" alt="Jake'sResume" class="resource-logo"> Jake's Resume (LaTeX)</h4>
+          <p>Industry-standard 1-page ATS-optimized resume template used by thousands of candidates landing FAANG
+            offers.</p>
+          <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzsqbzwjvdc" target="_blank"
+            class="resource-deck-btn">Open Overleaf Template →</a>
+        </div>
+      </div>
+      <br>
+      <div class="section-header-center">
+        <span class="section-tag">4-Year Success Plan</span>
+        <h2 class="section-title">The Engineering Placement Roadmap</h2>
+        <p class="section-subtitle">Follow these structured milestones from Year 1 to Year 4 to secure top product and
+          enterprise software roles.</p>
+      </div>
+      <div class="roadmap-container">
+        <!-- Year 1 -->
+        <div class="roadmap-year-card">
+          <div class="roadmap-year-header">
+            <div class="roadmap-year-title">
+              <div class="year-number-badge">1</div>
+              <div>
+                <h3>Year 1: Programming Foundation & CS Core</h3>
+                <span>Master C / C++ / Python, Basic Problem Solving & Math Foundations</span>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-steps-grid">
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-code"></i> Coding Language</h4>
+              <ul>
+                <li>Master syntax, memory pointers, recursion & OOP concepts in C++ or Java.</li>
+                <li>Solve 50+ basic problems on HackerRank / CodeChef.</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-laptop-code"></i> Development Basics</h4>
+              <ul>
+                <li>Learn Git version control and setup your GitHub profile.</li>
+                <li>Understand HTML5, CSS3, and modern JavaScript fundamentals.</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-graduation-cap"></i> Academic Target</h4>
+              <ul>
+                <li>Maintain a GPA of 8.0+ across Semesters 1 and 2.</li>
+                <li>Participate in departmental coding club activities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 2 -->
+        <div class="roadmap-year-card">
+          <div class="roadmap-year-header">
+            <div class="roadmap-year-title">
+              <div class="year-number-badge">2</div>
+              <div>
+                <h3>Year 2: Data Structures, Algorithms & Full-Stack</h3>
+                <span>Conquer Arrays, Trees, Graphs, Dynamic Programming & Build Full-Stack Apps</span>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-steps-grid">
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-sitemap"></i> DSA Mastery</h4>
+              <ul>
+                <li>Arrays, Strings, LinkedLists, Stacks, Queues, Binary Trees & Graphs.</li>
+                <li>Solve 150+ LeetCode problems (LeetCode 75 Roadmap).</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-cubes"></i> Project Development</h4>
+              <ul>
+                <li>Build 2 full-stack projects (React/Node.js or Python/FastAPI with PostgreSQL).</li>
+                <li>Deploy projects live on Vercel / Render with public GitHub repos.</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-trophy"></i> Hackathons</h4>
+              <ul>
+                <li>Participate in Smart India Hackathon (SIH) and college fests.</li>
+                <li>Contribute to open-source repositories during Hacktoberfest.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 3 -->
+        <div class="roadmap-year-card">
+          <div class="roadmap-year-header">
+            <div class="roadmap-year-title">
+              <div class="year-number-badge">3</div>
+              <div>
+                <h3>Year 3: Core CS Concepts & Competitive Coding</h3>
+                <span>DBMS, Operating Systems, Computer Networks, System Design & Internships</span>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-steps-grid">
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-server"></i> CS Fundamentals</h4>
+              <ul>
+                <li>Revise DBMS (SQL, Normalization, ACID), OS (Concurrency, Memory), and CN (TCP/IP).</li>
+                <li>Prepare concise interview flashcards for OOPs principles.</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-layer-group"></i> Advanced DSA</h4>
+              <ul>
+                <li>Master Dynamic Programming, Trie, Segment Trees, and Greedy algorithms.</li>
+                <li>Complete Striver SDE Sheet / NeetCode 150.</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-briefcase"></i> Summer Internships</h4>
+              <ul>
+                <li>Apply for summer technical internships via LinkedIn & campus drives.</li>
+                <li>Prepare ATS-friendly 1-page resume using LaTeX/Overleaf.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 4 -->
+        <div class="roadmap-year-card">
+          <div class="roadmap-year-header">
+            <div class="roadmap-year-title">
+              <div class="year-number-badge">4</div>
+              <div>
+                <h3>Year 4: Placement Drives & Mock Interviews</h3>
+                <span>Company-Specific Testing, System Design, Behavioral HR & Offers</span>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-steps-grid">
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-user-tie"></i> Mock Interviews</h4>
+              <ul>
+                <li>Conduct peer mock interviews on Pramp / Interviewing.io.</li>
+                <li>Practice STAR method for Behavioral & Leadership questions.</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-building"></i> Company Test Prep</h4>
+              <ul>
+                <li>Aptitude & Logical reasoning practice on IndiaBix.</li>
+                <li>Company-specific previous papers for TCS NQT, Cognizant GenC, Amazon, etc.</li>
+              </ul>
+            </div>
+            <div class="roadmap-step-item">
+              <h4><i class="fa-solid fa-award"></i> Final Placement</h4>
+              <ul>
+                <li>Attend on-campus & off-campus drives with verified documentation.</li>
+                <li>Secure offer letters and negotiate compensation packages.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 
+  <!-- ==========================================================================
+       PAGE VIEW 14: CONTACT US PAGE
+       ========================================================================== -->
   <div id="contact-page" class="page-view">
     <section class="contact-section">
-      <div class="contact-title"><h1>Contact us</h1></div>
+      <div class="contact-title">
+        <h1>Connect with Department of CSIT</h1>
+        <p>Have questions about admissions, academics, placement drives, or research collaborations? We're here to help.
+        </p>
+      </div>
+
       <div class="contact-grid-container">
+        <!-- Campus Card -->
         <div class="contact-card-panel">
           <div class="contact-row-item">
             <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
             <div class="contact-text-box">
-              <h3>Campus Address</h3>
-              <p>Sri Indu College Of Engineering & Technology,<br>Facing Main Road, Sheriguda,<br>Ibrahimpatan, R.R Dist. 501510.</p>
-            </div>
-          </div>
-          <div class="contact-row-item">
-            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
-            <div class="contact-text-box">
-              <h3>Phone</h3>
-              <p>+91 - 93473 63999<br>+91 - 93473 06999<br>+91 - 93473 53999</p>
-            </div>
-          </div>
-          <div class="contact-row-item">
-            <div class="contact-icon-box"><i class="fa-solid fa-building-columns"></i></div>
-            <div class="contact-text-box">
-              <h3>EAPCET Code</h3>
-              <p>INDU</p>
-            </div>
-          </div>
-          <a href="https://maps.app.goo.gl/WrkxHVudXZ8xvhG76" target="_blank" class="contact-action-btn">View Campus Location</a>
-        </div>
-        <div class="contact-card-panel">
-          <div class="contact-row-item">
-            <div class="contact-icon-box"><i class="fa-solid fa-city"></i></div>
-            <div class="contact-text-box">
-              <h3>City Office</h3>
-              <p>Sri Indu College of Engineering & Technology,<br>Vastunagar, Sheriguda (V),<br>Ibrahimpatnam (M), Rangareddy (D),<br>Telangana 501510</p>
-            </div>
-          </div>
-          <div class="contact-row-item">
-            <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
-            <div class="contact-text-box">
-              <h3>E-Mail</h3>
+              <h3>Main Campus Address</h3>
               <p>
-                For general enquiries: <a href="mailto:induprincipal@gmail.com">induprincipal@gmail.com</a><br>
-                For admissions: <a href="mailto:admissions@sriindu.ac.in">admissions@sriindu.ac.in</a><br>
-                For placements: <a href="mailto:rvenkat@sriindu.ac.in">rvenkat@sriindu.ac.in</a><br>
-                For web-related queries: <a href="mailto:sriinduoffice@gmail.com">sriinduoffice@gmail.com</a>
+                Sri Indu College of Engineering & Technology (Autonomous),<br>
+                Main Road, Sheriguda (V), Ibrahimpatnam (M),<br>
+                R.R. Dist., Telangana — 501510.
               </p>
             </div>
           </div>
-          <a href="https://maps.app.goo.gl/WrkxHVudXZ8xvhG76" target="_blank" class="contact-action-btn">View City Office Location</a>
+
+          <div class="contact-row-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-text-box">
+              <h3>Phone Helpline</h3>
+              <p>
+                +91 - 93473 63999<br>
+                +91 - 93473 06999<br>
+                +91 - 93473 53999
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-row-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="contact-text-box">
+              <h3>EAPCET / ICET Code</h3>
+              <p><strong>INDU</strong> (College Code)</p>
+            </div>
+          </div>
+
+          <a href="https://maps.app.goo.gl/WrkxHVudXZ8xvhG76" target="_blank" class="contact-action-btn">
+            <i class="fa-solid fa-map-location-dot"></i> Open Campus on Google Maps
+          </a>
+        </div>
+
+        <!-- City Office & Inquiries Card -->
+        <div class="contact-card-panel">
+          <div class="contact-row-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text-box">
+              <h3>Department Communications</h3>
+              <p>
+                <strong>Department Email:</strong> <a
+                  href="mailto:csitdeptsriindu@gmail.com">csitdeptsriindu@gmail.com</a><br>
+                <strong>Principal's Desk:</strong> <a
+                  href="mailto:induprincipal@gmail.com">induprincipal@gmail.com</a><br>
+                <strong>Admissions Desk:</strong> <a
+                  href="mailto:admissions@sriindu.ac.in">admissions@sriindu.ac.in</a><br>
+                <strong>Training & Placement:</strong> <a href="mailto:rvenkat@sriindu.ac.in">rvenkat@sriindu.ac.in</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-row-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-text-box">
+              <h3>Working Hours</h3>
+              <p>
+                Monday – Saturday: 9:00 AM – 4:30 PM<br>
+                Sunday & Public Holidays: Closed
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-row-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="contact-text-box">
+              <h3>Accreditation Credentials</h3>
+              <p>UGC Autonomous | NBA Accredited | NAAC 'A+' Grade | Approved by AICTE, New Delhi.</p>
+            </div>
+          </div>
+
+          <a href="mailto:csitdeptsriindu@gmail.com" class="contact-action-btn">
+            <i class="fa-solid fa-paper-plane"></i> Send Official Email Inquiry
+          </a>
         </div>
       </div>
     </section>
   </div>
 
-  <footer class="footer">  
+  <!-- ==========================================================================
+       MODERN DARK FOOTER
+       ========================================================================== -->
+  <footer class="footer">
     <div class="footer-container">
+      <div class="footer-brand">
+        <img src="Assets/Campus/Sri indu logo.png" class="logo" alt="Sri Indu Logo">
+        <h2>Department of CSIT</h2>
+        <p>Sri Indu College of Engineering and Technology (Autonomous). Committed to fostering academic distinction,
+          cutting-edge research, and top global career placement.</p>
+      </div>
+
       <div class="footer-box">
         <h3>Academics</h3>
-        <a href="#" onclick="openPage('objectives-page')">Objectives</a>
-        <a href="#" onclick="openPage('calendar-page')">Academic Calendar</a>
+        <a href="#/objectives" onclick="openPage('objectives-page')">Objectives & Vision</a>
+        <a href="#/academic-calendar" onclick="openPage('calendar-page')">Academic Calendar</a>
+        <a href="#/notes" onclick="openPage('notes-page')">Notes & Q-Banks</a>
       </div>
+
       <div class="footer-box">
         <h3>Infrastructure</h3>
-        <a href="#" onclick="openPage('laboratories-page')">Laboratories</a>
-        <a href="#" onclick="openPage('classrooms-page')">Classrooms</a>
+        <a href="#/laboratories" onclick="openPage('laboratories-page')">Computing Labs</a>
+        <a href="#/classrooms" onclick="openPage('classrooms-page')">Smart Classrooms</a>
+        <a href="#/library" onclick="openPage('library-page')">Central Library</a>
+        <a href="#/seminar-hall" onclick="openPage('seminar-page')">Auditorium</a>
       </div>
+
       <div class="footer-box">
-        <h3>Faculty</h3>
-        <a href="#" onclick="openPage('teaching-page')">Teaching</a>
-        <a href="#" onclick="openPage('non-teaching-page')">Non-Teaching</a>
+        <h3>Faculty & Staff</h3>
+        <a href="#/faculty" onclick="openPage('teaching-page')">Teaching Faculty</a>
+        <a href="#/technical-staff" onclick="openPage('non-teaching-page')">Technical Support</a>
+        <a href="#/contact" onclick="openPage('contact-page')">Office Directory</a>
       </div>
-      <div class="footer-box">
-        <h3>Student Corner</h3>
-        <a href="#" onclick="openPage('gallery-page')">Gallery</a>
-        <a href="#" onclick="openPage('placements-page')">Placements</a>
-        <a href="#" onclick="openPage('notes-page')">Notes</a>
-      </div>
+
       <div class="footer-box">
         <h3>Career Core</h3>
-        <a href="#" onclick="openPage('placement-guide-page')">Placement Guide</a>
-        <a href="#" onclick="openPage('contact-page')">Contact Us</a>
+        <a href="#/placement-guide" onclick="openPage('placement-guide-page')">Placement Guide</a>
+        <a href="#/placements" onclick="openPage('placements-page')">Placement Records</a>
+        <a href="#/gallery" onclick="openPage('gallery-page')">Campus Gallery</a>
+        <a href="#/contact" onclick="openPage('contact-page')">Contact Us</a>
       </div>
-    </div>  
-    <div class="copyright">© 2026 Sri Indu College of Engineering and Technology — Department of CSIT</div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Department of Computer Science & Information Technology, Sri Indu College of Engineering and
+        Technology. All rights reserved.</div>
+      <div>EAPCET / ICET Code: <strong>INDU</strong> | Autonomous Institution</div>
+    </div>
   </footer>
 
-  <button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Application Runtime -->
   <script src="script.js"></script>
 </body>
+
 </html>
