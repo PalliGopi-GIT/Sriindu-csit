@@ -2,7 +2,7 @@
 
 Official website for the **Department of Computer Science and Information Technology (CSIT)** at **Sri Indu College of Engineering & Technology (Autonomous)**, Hyderabad, Telangana. The site presents the department's academics, infrastructure, faculty, placements, and student resources, and includes **IGRIS**, an AI-powered study assistant for students.
 
-🔗 Live target:https://sriindu-csit.vercel.app/
+🔗 Live target: "https://sriindu-csit.vercel.app"
 
 ---
 
